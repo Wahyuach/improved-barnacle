@@ -15,13 +15,11 @@ class ProductFormTest extends TestCase
     #[\PHPUnit\Framework\Attributes\PreserveGlobalState(false)]
     public function test_add_mode_initializes_with_no_disabled_attribute()
     {
-        // Mount the component without a product (add mode)
-        Livewire::test(\App\Livewire\ProductForm::class)
-            // Force add-mode state to avoid test environment state bleed
-            ->set('isEditing', false)
+        // Mount the AddProductForm component
+        Livewire::test(\App\Livewire\AddProductForm::class)
             // Should render add-mode header
-            ->assertSee('Tambah Produk Baru')
-            // When not editing, the SKU input should NOT be disabled in the rendered markup
+            ->assertSee('Simpan Produk')
+            // When adding, the SKU input should NOT be disabled in the rendered markup
             ->assertDontSee('disabled');
     }
 
@@ -29,7 +27,7 @@ class ProductFormTest extends TestCase
     #[\PHPUnit\Framework\Attributes\PreserveGlobalState(false)]
     public function test_edit_mode_initializes_with_isEditing_true_and_renders_disabled_sku()
     {
-        // Create a Product instance without persisting (we don't need DB for mount)
+        // Create a Product instance
         $product = new Product([
             'name' => 'Sample Product',
             'sku' => 'SKU-EDIT-001',
@@ -43,8 +41,7 @@ class ProductFormTest extends TestCase
             'supplier' => 'supplier',
         ]);
 
-        Livewire::test(\App\Livewire\ProductForm::class, ['product' => $product])
-            ->assertSet('isEditing', true)
+        Livewire::test(\App\Livewire\EditProductForm::class, ['product' => $product])
             ->assertSet('sku', 'SKU-EDIT-001')
             // When editing, the SKU input should be rendered disabled
             ->assertSee('disabled');

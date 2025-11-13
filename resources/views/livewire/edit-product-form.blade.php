@@ -11,6 +11,7 @@
                     type="text"
                     wire:model="name"
                     placeholder="Masukkan nama produk"
+                    autofocus
                     class="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-lg dark:bg-slate-700 dark:text-white focus:ring-2 focus:ring-blue-500 focus:border-transparent @error('name') border-red-500 @enderror"
                 />
                 @error('name')
@@ -20,23 +21,17 @@
                 @enderror
             </div>
 
-            <!-- SKU -->
+            <!-- SKU (DISABLED IN EDIT MODE) -->
             <div>
                 <label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
-                    SKU <span class="text-red-500">*</span>
+                    SKU <span class="text-gray-500">(Tidak bisa diubah)</span>
                 </label>
                 <input
                     type="text"
                     wire:model="sku"
-                    placeholder="Masukkan SKU"
-                    @if($isEditing) disabled @endif
-                    class="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-lg dark:bg-slate-700 dark:text-white focus:ring-2 focus:ring-blue-500 focus:border-transparent @error('sku') border-red-500 @enderror @if($isEditing) opacity-60 bg-gray-100 dark:bg-slate-600 @endif"
+                    disabled
+                    class="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-lg dark:bg-slate-700 dark:text-white opacity-60 bg-gray-100 dark:bg-slate-600 cursor-not-allowed"
                 />
-                @error('sku')
-                    <p class="mt-1 text-sm text-red-500 flex items-center">
-                        <span class="mr-1">❌</span> {{ $message }}
-                    </p>
-                @enderror
             </div>
         </div>
 
@@ -195,10 +190,7 @@
         <!-- Form Info Alert -->
         <div class="bg-blue-50 dark:bg-blue-900/30 border border-blue-200 dark:border-blue-800 rounded-lg p-4">
             <p class="text-sm text-blue-800 dark:text-blue-200">
-                <span class="font-semibold">ℹ️ Informasi:</span> Pastikan semua field dengan tanda <span class="text-red-500">*</span> sudah terisi.
-                @if ($isEditing)
-                    <br>SKU tidak bisa diubah setelah produk dibuat.
-                @endif
+                <span class="font-semibold">ℹ️ Informasi:</span> SKU tidak bisa diubah setelah produk dibuat.
             </p>
         </div>
 
@@ -209,7 +201,7 @@
                 class="flex-1 bg-blue-600 hover:bg-blue-700 active:bg-blue-800 text-white font-semibold py-3 px-4 rounded-lg transition duration-200 flex items-center justify-center gap-2"
             >
                 <span>💾</span>
-                {{ $isEditing ? 'Perbarui Produk' : 'Simpan Produk' }}
+                Perbarui Produk
             </button>
             <button
                 type="button"

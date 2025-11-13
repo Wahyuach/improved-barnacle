@@ -193,13 +193,13 @@
                     </button>
                 </div>
                 <div class="p-6">
-                    {{-- Only render ProductForm (not both add and edit) --}}
+                    {{-- Separate components for Add and Edit --}}
                     @if ($editingProductId)
-                        {{-- Edit mode: pass the product --}}
-                        <livewire:product-form :product="$this->editingProduct" wire:key="{{ $productFormKey }}" />
+                        {{-- Edit mode: EditProductForm component --}}
+                        <livewire:edit-product-form :product="$this->editingProduct" wire:key="{{ $productFormKey }}" />
                     @else
-                        {{-- Add mode: no product --}}
-                        <livewire:product-form wire:key="{{ $productFormKey }}" />
+                        {{-- Add mode: AddProductForm component --}}
+                        <livewire:add-product-form wire:key="{{ $productFormKey }}" />
                     @endif
                 </div>
             </div>
