@@ -193,12 +193,12 @@
                     </button>
                 </div>
                 <div class="p-6">
-                    {{-- Pass a key so the child ProductForm remounts cleanly for add vs edit --}}
+                    {{-- Only render ProductForm (not both add and edit) --}}
                     @if ($editingProductId)
-                        {{-- Use wire:key so Livewire mounts a fresh instance for edit --}}
+                        {{-- Edit mode: pass the product --}}
                         <livewire:product-form :product="$this->editingProduct" wire:key="{{ $productFormKey }}" />
                     @else
-                        {{-- Use wire:key so Livewire mounts a fresh instance for add --}}
+                        {{-- Add mode: no product --}}
                         <livewire:product-form wire:key="{{ $productFormKey }}" />
                     @endif
                 </div>
@@ -209,13 +209,18 @@
 
 @script
 <script>
+    // Livewire 3 syntax for listening to dispatched events
     Livewire.on('product-saved', () => {
+        // Close modal
         $wire.closeForm();
+        // Refresh dashboard data
         $wire.$refresh();
+        // Show success message
         alert('Produk berhasil disimpan!');
     });
 
     Livewire.on('product-deleted', () => {
+        // Refresh dashboard after delete
         $wire.$refresh();
         alert('Produk berhasil dihapus!');
     });

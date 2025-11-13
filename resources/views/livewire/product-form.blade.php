@@ -1,10 +1,4 @@
 <div>
-    <div class="flex items-center justify-between mb-6">
-        <h2 class="text-2xl font-bold text-gray-900 dark:text-white">
-            {{ $isEditing ? 'Edit Produk' : 'Tambah Produk Baru' }}
-        </h2>
-    </div>
-
     <form wire:submit="save" class="space-y-6">
         <!-- Row 1: Nama & SKU -->
         <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
