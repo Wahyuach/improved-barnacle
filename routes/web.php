@@ -29,4 +29,10 @@ Route::middleware(['auth'])->group(function () {
             ),
         )
         ->name('two-factor.show');
+
+    // Inventory Routes
+    Route::prefix('inventory')->name('inventory.')->group(function () {
+        Route::get('/', \App\Livewire\InventoryDashboard::class)->name('dashboard');
+        Route::get('/product/{product}', \App\Livewire\ProductDetail::class)->name('product');
+    });
 });
