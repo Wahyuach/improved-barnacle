@@ -8,7 +8,7 @@ Sebelum memulai, pastikan sistem Anda memiliki:
 - **Node.js** 16+ dan npm
 - **Composer** (latest)
 - **Git**
-- **Database**: SQLite (included) atau MySQL/PostgreSQL
+- **Database**: MySQL (recommended) atau SQLite/PostgreSQL
 - **Memory**: Minimal 1GB RAM
 
 ### Check Prerequisites
@@ -80,20 +80,38 @@ APP_KEY=base64:xxx...
 APP_DEBUG=true
 APP_URL=http://localhost:8000
 
-DB_CONNECTION=sqlite
-# SQLite is default - no extra config needed
+# If you plan to use MySQL (recommended), set DB vars as below:
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=improved_barnacle
+DB_USERNAME=root
+DB_PASSWORD=
+
+# If you want to use SQLite instead, set:
+# DB_CONNECTION=sqlite
+# File: database/database.sqlite
 ```
 
-### Step 4: Database Setup
+### Step 4: Database Setup (MySQL)
 
-```bash
-# Create database file (if using SQLite)
-touch database/database.sqlite
+First, create the MySQL database and user (example). Replace `root`/password or use your preferred DB user.
 
-# Run migrations
-php artisan migrate
+PowerShell / Bash (using mysql CLI):
+```powershell
+# Create database (replace credentials if needed)
+mysql -u root -p -e "CREATE DATABASE IF NOT EXISTS improved_barnacle CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;"
 
-# Seed with sample data
+# (Optional) Create dedicated user and grant privileges:
+mysql -u root -p -e "CREATE USER IF NOT EXISTS 'kantin'@'localhost' IDENTIFIED BY 'password'; GRANT ALL PRIVILEGES ON improved_barnacle.* TO 'kantin'@'localhost'; FLUSH PRIVILEGES;"
+```
+
+If you prefer GUI tools, create the database using MySQL Workbench / phpMyAdmin / HeidiSQL.
+
+Then run migrations and seeders:
+```powershell
+# Ensure .env DB_* values point to the MySQL database created above
+php artisan migrate --force
 php artisan db:seed
 ```
 
@@ -102,6 +120,17 @@ php artisan db:seed
 ✓ Migration: 2025_11_13_000001_create_inventory_tables ... DONE
 ✓ Seeding database ...
 ✓ Database seeded successfully
+```
+
+### Alternative: SQLite (quick local test)
+
+If you prefer SQLite for quick local testing, create the DB file and run migrations:
+```powershell
+# Create SQLite file
+New-Item -Path .\database\database.sqlite -ItemType File -Force
+
+php artisan migrate --force
+php artisan db:seed
 ```
 
 ### Step 5: Build Frontend Assets
