@@ -1,7 +1,7 @@
 # Docs for the Azure Web Apps Deploy action: https://github.com/Azure/webapps-deploy
 # More GitHub Actions for Azure: https://github.com/Azure/actions
 
-name: Build and deploy ASP.Net Core app to Azure Web App - cc-class
+name: Build and deploy PHP app to Azure Web App - cc-class
 
 on:
   push:
@@ -11,32 +11,37 @@ on:
 
 jobs:
   build:
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
     permissions:
       contents: read #This is required for actions/checkout
 
     steps:
       - uses: actions/checkout@v4
 
-      - name: Set up .NET Core
-        uses: actions/setup-dotnet@v4
+      - name: Setup PHP
+        uses: shivammathur/setup-php@v2
         with:
-          dotnet-version: '10.x'
+          php-version: '8.4'
 
-      - name: Build with dotnet
-        run: dotnet build --configuration Release
+      - name: Check if composer.json exists
+        id: check_files
+        uses: andstor/file-existence-action@v1
+        with:
+          files: 'composer.json'
 
-      - name: dotnet publish
-        run: dotnet publish -c Release -o "${{env.DOTNET_ROOT}}/myapp"
+      - name: Run composer install if composer.json exists
+        if: steps.check_files.outputs.files_exists == 'true'
+        run: composer validate --no-check-publish && composer install --prefer-dist --no-progress
+
 
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v4
         with:
-          name: .net-app
-          path: ${{env.DOTNET_ROOT}}/myapp
+          name: php-app
+          path: .
 
   deploy:
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
     needs: build
     permissions:
       id-token: write #This is required for requesting the JWT
@@ -46,18 +51,18 @@ jobs:
       - name: Download artifact from build job
         uses: actions/download-artifact@v4
         with:
-          name: .net-app
+          name: php-app
       
       - name: Login to Azure
         uses: azure/login@v2
         with:
-          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_00BB1946E7B541D9AD453FB83B2BAD05 }}
-          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_5A5A9E3DA05545809EAE2800AA540A0D }}
-          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_3801820256F64F78BB47D7050A701F6A }}
+          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_934E18350E96484D96AB09E9AC13BBD6 }}
+          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_C26884ABF609464AB31DE841BEBCF1F0 }}
+          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_655F00762244470A997E98E0B45BC0AF }}
 
-      - name: Deploy to Azure Web App
-        id: deploy-to-webapp
+      - name: 'Deploy to Azure Web App'
         uses: azure/webapps-deploy@v3
+        id: deploy-to-webapp
         with:
           app-name: 'cc-class'
           slot-name: 'Production'
