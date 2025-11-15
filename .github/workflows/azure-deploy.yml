@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
 
 env:
-  AZURE_WEBAPP_NAME: kantin-kenanga-app  # Change this to your app name
+  AZURE_WEBAPP_NAME: kenanga-corp  # Change this to your app name
   AZURE_WEBAPP_PACKAGE_PATH: '.'
   PHP_VERSION: '8.2'
 
@@ -58,24 +58,16 @@ jobs:
       - name: Login to Azure
         uses: azure/login@v2
         with:
-          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_934E18350E96484D96AB09E9AC13BBD6 }}
-          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_C26884ABF609464AB31DE841BEBCF1F0 }}
-          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_655F00762244470A997E98E0B45BC0AF }}
+          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_16CE93377DCC40C3A7C284A85D59E421 }}
+          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_C39AF4595931482FA2EF73CFB5129464 }}
+          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_371EEFF6548945DBB4A718EF09A1D8C1 }}
 
-    #   - name: Deploy to Azure Web App
-    #     uses: azure/webapps-deploy@v2
-    #     with:
-    #       app-name: ${{ env.AZURE_WEBAPP_NAME }}
-    #       publish-profile: ${{ secrets.AZURE_WEBAPP_PUBLISH_PROFILE }}
-    #       package: ${{ env.AZURE_WEBAPP_PACKAGE_PATH }}
-
-      - name: 'Deploy to Azure Web App'
-        uses: azure/webapps-deploy@v3
-        id: deploy-to-webapp
+      - name: Deploy to Azure Web App
+        uses: azure/webapps-deploy@v2
         with:
-           app-name: 'kenanga-corp'
-           slot-name: 'Production'
-           package: .
+           app-name: ${{ env.AZURE_WEBAPP_NAME }}
+           package: ${{ env.AZURE_WEBAPP_PACKAGE_PATH }}
+    
 
       - name: Health check
         run: |
