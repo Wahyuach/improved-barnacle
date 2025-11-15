@@ -62,12 +62,20 @@ jobs:
           tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_C26884ABF609464AB31DE841BEBCF1F0 }}
           subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_655F00762244470A997E98E0B45BC0AF }}
 
-      - name: Deploy to Azure Web App
-        uses: azure/webapps-deploy@v2
+    #   - name: Deploy to Azure Web App
+    #     uses: azure/webapps-deploy@v2
+    #     with:
+    #       app-name: ${{ env.AZURE_WEBAPP_NAME }}
+    #       publish-profile: ${{ secrets.AZURE_WEBAPP_PUBLISH_PROFILE }}
+    #       package: ${{ env.AZURE_WEBAPP_PACKAGE_PATH }}
+
+      - name: 'Deploy to Azure Web App'
+        uses: azure/webapps-deploy@v3
+        id: deploy-to-webapp
         with:
-          app-name: ${{ env.AZURE_WEBAPP_NAME }}
-          publish-profile: ${{ secrets.AZURE_WEBAPP_PUBLISH_PROFILE }}
-          package: ${{ env.AZURE_WEBAPP_PACKAGE_PATH }}
+           app-name: 'kenanga-corp'
+           slot-name: 'Production'
+           package: .
 
       - name: Health check
         run: |
