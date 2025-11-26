@@ -1,0 +1,1767 @@
+Kind: captions
+Language: en
+assalamualaikum<00:00:02.100><c> hi</c><00:00:02.399><c> everyone</c><00:00:02.639><c> today</c><00:00:03.360><c> we</c><00:00:03.659><c> are</c>
+assalamualaikum hi everyone today we are
+assalamualaikum hi everyone today we are
+going<00:00:03.959><c> to</c><00:00:04.080><c> learn</c><00:00:04.319><c> how</c><00:00:04.680><c> to</c><00:00:04.860><c> install</c><00:00:05.040><c> and</c><00:00:05.880><c> run</c>
+going to learn how to install and run
+going to learn how to install and run
+laravel<00:00:07.140><c> on</c><00:00:07.379><c> azure</c><00:00:08.220><c> we</c><00:00:08.760><c> are</c><00:00:08.880><c> going</c><00:00:09.059><c> to</c><00:00:09.240><c> enable</c>
+laravel on azure we are going to enable
+laravel on azure we are going to enable
+support<00:00:10.559><c> for</c><00:00:11.280><c> cues</c><00:00:12.059><c> and</c><00:00:12.420><c> remote</c><00:00:12.660><c> database</c>
+so<00:00:17.460><c> our</c><00:00:17.640><c> first</c><00:00:17.880><c> step</c><00:00:18.119><c> is</c><00:00:18.359><c> to</c><00:00:18.539><c> create</c><00:00:18.720><c> a</c><00:00:19.020><c> web</c><00:00:19.140><c> app</c>
+so our first step is to create a web app
+so our first step is to create a web app
+then<00:00:20.340><c> we</c><00:00:20.580><c> are</c><00:00:20.760><c> going</c><00:00:20.939><c> to</c><00:00:21.060><c> create</c><00:00:21.359><c> a</c><00:00:21.720><c> separate</c>
+then we are going to create a separate
+then we are going to create a separate
+database<00:00:22.859><c> a</c><00:00:23.460><c> separate</c><00:00:23.820><c> service</c><00:00:24.119><c> for</c><00:00:24.660><c> that</c>
+database a separate service for that
+database a separate service for that
+base
+base
+base
+then<00:00:26.699><c> we</c><00:00:26.880><c> are</c><00:00:27.060><c> going</c><00:00:27.180><c> to</c><00:00:27.359><c> update</c><00:00:27.660><c> our</c><00:00:27.840><c> web</c><00:00:28.080><c> app</c>
+then we are going to update our web app
+then we are going to update our web app
+so<00:00:28.560><c> that</c><00:00:28.740><c> at</c><00:00:29.039><c> each</c><00:00:29.220><c> restart</c><00:00:29.760><c> at</c><00:00:30.660><c> each</c><00:00:30.960><c> server</c>
+so that at each restart at each server
+so that at each restart at each server
+restart<00:00:31.920><c> it</c><00:00:32.700><c> updates</c><00:00:33.120><c> a</c><00:00:33.840><c> few</c><00:00:34.140><c> configuration</c>
+restart it updates a few configuration
+restart it updates a few configuration
+files<00:00:35.460><c> for</c><00:00:35.760><c> the</c><00:00:35.940><c> PHP</c><00:00:36.360><c> for</c><00:00:36.719><c> the</c><00:00:36.899><c> nginx</c><00:00:37.800><c> ETC</c><00:00:37.980><c> then</c>
+files for the PHP for the nginx ETC then
+files for the PHP for the nginx ETC then
+we<00:00:39.000><c> are</c><00:00:39.180><c> going</c><00:00:39.420><c> to</c><00:00:39.680><c> make</c><00:00:40.680><c> a</c><00:00:40.920><c> custom</c><00:00:41.100><c> GitHub</c>
+we are going to make a custom GitHub
+we are going to make a custom GitHub
+action<00:00:42.360><c> workflow</c><00:00:42.960><c> and</c><00:00:43.680><c> we</c><00:00:44.399><c> are</c><00:00:44.579><c> going</c><00:00:44.820><c> to</c><00:00:45.000><c> see</c>
+action workflow and we are going to see
+action workflow and we are going to see
+how<00:00:45.480><c> to</c><00:00:45.719><c> add</c><00:00:46.140><c> secret</c><00:00:46.860><c> keys</c><00:00:47.520><c> to</c><00:00:48.000><c> the</c><00:00:48.180><c> actions</c>
+how to add secret keys to the actions
+how to add secret keys to the actions
+finally<00:00:49.500><c> we</c><00:00:49.739><c> are</c><00:00:49.860><c> going</c><00:00:49.980><c> to</c><00:00:50.100><c> deploy</c><00:00:50.460><c> our</c>
+finally we are going to deploy our
+finally we are going to deploy our
+project
+project
+project
+what<00:00:53.340><c> you</c><00:00:53.520><c> are</c><00:00:53.700><c> seeing</c><00:00:54.000><c> here</c><00:00:54.300><c> is</c><00:00:55.020><c> an</c><00:00:55.680><c> already</c>
+what you are seeing here is an already
+what you are seeing here is an already
+live<00:00:56.520><c> project</c><00:00:57.120><c> that</c><00:00:57.840><c> is</c><00:00:57.960><c> running</c><00:00:58.199><c> on</c><00:00:58.920><c> AWS</c>
+live project that is running on AWS
+live project that is running on AWS
+however<00:01:00.660><c> I'm</c><00:01:01.379><c> going</c><00:01:01.680><c> to</c><00:01:01.860><c> replicate</c><00:01:02.520><c> the</c><00:01:02.820><c> same</c>
+however I'm going to replicate the same
+however I'm going to replicate the same
+project<00:01:03.600><c> on</c><00:01:04.500><c> Azure</c><00:01:05.040><c> and</c><00:01:05.519><c> as</c><00:01:05.700><c> you</c><00:01:05.820><c> can</c><00:01:05.939><c> see</c><00:01:06.060><c> this</c>
+project on Azure and as you can see this
+project on Azure and as you can see this
+has<00:01:06.720><c> a</c><00:01:07.020><c> database</c><00:01:07.500><c> and</c><00:01:08.100><c> it</c><00:01:08.400><c> has</c><00:01:08.640><c> a</c><00:01:09.299><c> newsletter</c>
+has a database and it has a newsletter
+has a database and it has a newsletter
+subscription<00:01:10.380><c> which</c><00:01:10.799><c> runs</c><00:01:11.100><c> a</c><00:01:11.280><c> job</c><00:01:11.460><c> in</c><00:01:11.700><c> the</c>
+subscription which runs a job in the
+subscription which runs a job in the
+background<00:01:12.180><c> a</c><00:01:12.720><c> queue</c><00:01:13.080><c> so</c><00:01:13.500><c> let's</c><00:01:13.619><c> go</c><00:01:13.920><c> to</c><00:01:14.040><c> the</c>
+background a queue so let's go to the
+background a queue so let's go to the
+portal<00:01:16.080><c> of</c><00:01:16.320><c> azure.com</c><00:01:17.299><c> and</c><00:01:18.299><c> we</c><00:01:18.780><c> are</c><00:01:18.960><c> going</c><00:01:19.140><c> to</c>
+portal of azure.com and we are going to
+portal of azure.com and we are going to
+create<00:01:19.560><c> a</c><00:01:19.920><c> new</c><00:01:20.040><c> resource</c><00:01:20.580><c> I</c><00:01:21.299><c> will</c><00:01:21.479><c> create</c><00:01:21.659><c> a</c>
+create a new resource I will create a
+create a new resource I will create a
+web<00:01:22.259><c> app</c>
+web app
+web app
+for<00:01:24.299><c> the</c><00:01:24.420><c> resource</c><00:01:24.840><c> Europe</c><00:01:25.080><c> I</c><00:01:25.500><c> will</c><00:01:25.619><c> just</c><00:01:25.860><c> call</c>
+for the resource Europe I will just call
+for the resource Europe I will just call
+it<00:01:26.400><c> the</c><00:01:27.180><c> pointed</c><00:01:27.780><c> RG</c>
+it the pointed RG
+it the pointed RG
+okay<00:01:30.020><c> and</c><00:01:31.020><c> for</c><00:01:31.560><c> the</c><00:01:32.040><c> instance</c><00:01:32.640><c> details</c><00:01:33.360><c> on</c><00:01:33.720><c> the</c>
+okay and for the instance details on the
+okay and for the instance details on the
+name<00:01:34.020><c> I</c><00:01:34.259><c> will</c><00:01:34.439><c> just</c><00:01:34.619><c> say</c><00:01:34.979><c> it</c><00:01:35.159><c> if</c><00:01:35.520><c> pointed</c>
+and
+and
+and
+on<00:01:41.400><c> the</c><00:01:41.640><c> publish</c><00:01:42.000><c> I</c><00:01:42.360><c> will</c><00:01:42.540><c> choose</c><00:01:42.900><c> the</c><00:01:43.140><c> code</c>
+on the publish I will choose the code
+on the publish I will choose the code
+because
+because
+because
+this<00:01:45.420><c> is</c><00:01:45.540><c> not</c><00:01:45.720><c> a</c><00:01:45.900><c> static</c><00:01:46.200><c> website</c>
+this is not a static website
+this is not a static website
+and<00:01:48.540><c> and</c><00:01:49.020><c> my</c><00:01:49.320><c> solution</c><00:01:49.560><c> is</c><00:01:49.799><c> not</c><00:01:49.979><c> containerized</c>
+and and my solution is not containerized
+and and my solution is not containerized
+and<00:01:51.299><c> I</c><00:01:51.479><c> believe</c><00:01:51.659><c> the</c><00:01:52.500><c> code</c><00:01:52.619><c> is</c><00:01:52.799><c> the</c><00:01:53.040><c> best</c>
+and I believe the code is the best
+and I believe the code is the best
+option<00:01:53.399><c> that</c><00:01:53.759><c> you</c><00:01:53.880><c> can</c><00:01:54.000><c> go</c><00:01:54.180><c> with</c><00:01:54.420><c> for</c><00:01:55.140><c> PHP</c><00:01:55.680><c> I</c>
+option that you can go with for PHP I
+option that you can go with for PHP I
+will<00:01:56.159><c> choose</c><00:01:56.460><c> PHP</c><00:01:57.380><c> 8.1</c><00:01:58.380><c> the</c><00:01:58.979><c> PHP</c><00:01:59.460><c> version</c>
+will choose PHP 8.1 the PHP version
+will choose PHP 8.1 the PHP version
+depends<00:02:00.360><c> on</c><00:02:00.479><c> your</c><00:02:00.720><c> code</c><00:02:00.960><c> the</c><00:02:01.860><c> minimum</c><00:02:02.280><c> version</c>
+depends on your code the minimum version
+depends on your code the minimum version
+of<00:02:02.939><c> PSP</c><00:02:03.299><c> is</c><00:02:04.340><c> 8.0</c><00:02:05.340><c> there</c><00:02:06.000><c> is</c><00:02:06.119><c> no</c><00:02:06.299><c> support</c><00:02:06.600><c> for</c>
+of PSP is 8.0 there is no support for
+of PSP is 8.0 there is no support for
+7.4<00:02:08.160><c> and</c><00:02:09.060><c> for</c><00:02:09.599><c> the</c><00:02:09.840><c> region</c><00:02:10.319><c> I</c><00:02:10.619><c> will</c>
+check<00:02:13.860><c> mine</c><00:02:14.400><c> I</c><00:02:14.700><c> am</c><00:02:14.879><c> in</c><00:02:15.239><c> UAE</c><00:02:16.260><c> as</c><00:02:16.920><c> for</c><00:02:17.160><c> the</c>
+check mine I am in UAE as for the
+check mine I am in UAE as for the
+pricing<00:02:17.700><c> plans</c><00:02:18.000><c> I'm</c><00:02:18.239><c> going</c><00:02:18.420><c> to</c><00:02:18.720><c> keep</c><00:02:19.260><c> it</c><00:02:19.500><c> as</c><00:02:19.800><c> it</c>
+pricing plans I'm going to keep it as it
+pricing plans I'm going to keep it as it
+is<00:02:20.160><c> I'm</c><00:02:20.879><c> going</c><00:02:21.120><c> to</c><00:02:21.300><c> delete</c><00:02:21.480><c> it</c><00:02:21.780><c> after</c><00:02:22.379><c> I'm</c>
+is I'm going to delete it after I'm
+is I'm going to delete it after I'm
+finished<00:02:23.160><c> with</c><00:02:23.400><c> this</c><00:02:23.580><c> tutorial</c>
+finished with this tutorial
+finished with this tutorial
+as<00:02:25.260><c> for</c><00:02:25.440><c> the</c><00:02:25.680><c> zoom</c><00:02:25.920><c> redundancy</c><00:02:26.520><c> I'm</c><00:02:26.760><c> going</c><00:02:26.940><c> to</c>
+as for the zoom redundancy I'm going to
+as for the zoom redundancy I'm going to
+keep<00:02:27.300><c> it</c><00:02:27.480><c> disabled</c><00:02:28.020><c> but</c><00:02:28.440><c> if</c><00:02:28.739><c> you</c><00:02:28.860><c> are</c><00:02:29.040><c> running</c>
+keep it disabled but if you are running
+keep it disabled but if you are running
+an<00:02:29.940><c> Enterprise</c><00:02:30.120><c> level</c><00:02:30.720><c> solution</c><00:02:31.700><c> uh</c><00:02:32.700><c> please</c>
+an Enterprise level solution uh please
+an Enterprise level solution uh please
+enable<00:02:33.239><c> it</c><00:02:33.480><c> it's</c><00:02:34.020><c> it's</c><00:02:34.319><c> better</c><00:02:34.560><c> to</c><00:02:34.860><c> have</c><00:02:35.360><c> your</c>
+enable it it's it's better to have your
+enable it it's it's better to have your
+application<00:02:36.840><c> redundant</c>
+application redundant
+application redundant
+next<00:02:39.840><c> the</c><00:02:40.560><c> deployment</c>
+next the deployment
+next the deployment
+a<00:02:42.180><c> month</c><00:02:42.300><c> ago</c><00:02:42.660><c> this</c><00:02:43.140><c> was</c><00:02:43.519><c> disabled</c><00:02:44.519><c> by</c><00:02:44.760><c> default</c>
+a month ago this was disabled by default
+a month ago this was disabled by default
+you<00:02:45.300><c> couldn't</c><00:02:45.540><c> enable</c><00:02:45.959><c> it</c><00:02:46.200><c> basically</c><00:02:47.099><c> this</c><00:02:47.400><c> is</c>
+you couldn't enable it basically this is
+you couldn't enable it basically this is
+asking<00:02:48.000><c> you</c><00:02:48.120><c> if</c><00:02:48.480><c> you</c><00:02:48.720><c> enable</c><00:02:49.019><c> it</c><00:02:49.319><c> which</c><00:02:49.800><c> I'm</c>
+asking you if you enable it which I'm
+asking you if you enable it which I'm
+not<00:02:50.160><c> going</c><00:02:50.340><c> to</c><00:02:50.580><c> do</c><00:02:50.760><c> but</c><00:02:51.720><c> if</c><00:02:52.019><c> you</c><00:02:52.200><c> enable</c><00:02:52.440><c> it</c><00:02:52.680><c> and</c>
+not going to do but if you enable it and
+not going to do but if you enable it and
+you<00:02:53.160><c> select</c><00:02:53.459><c> your</c><00:02:53.640><c> Revo</c>
+you select your Revo
+you select your Revo
+and<00:02:56.040><c> I</c><00:02:56.280><c> believe</c>
+and I believe
+and I believe
+this<00:02:57.840><c> is</c><00:02:57.959><c> the</c><00:02:58.140><c> one</c>
+this is the one
+this is the one
+and<00:02:59.819><c> you</c><00:03:00.300><c> connect</c><00:03:00.599><c> it</c><00:03:00.980><c> with</c><00:03:01.980><c> your</c><00:03:02.160><c> branch</c><00:03:02.519><c> you</c>
+and you connect it with your branch you
+and you connect it with your branch you
+can<00:03:03.540><c> see</c><00:03:03.660><c> here</c><00:03:03.840><c> there</c><00:03:04.080><c> is</c><00:03:04.200><c> a</c><00:03:04.319><c> configuration</c>
+can see here there is a configuration
+can see here there is a configuration
+file
+file
+file
+this<00:03:06.660><c> will</c><00:03:07.379><c> be</c><00:03:07.680><c> put</c><00:03:08.040><c> to</c><00:03:08.640><c> your</c><00:03:08.879><c> solution</c><00:03:09.780><c> this</c>
+this will be put to your solution this
+this will be put to your solution this
+will<00:03:10.440><c> be</c><00:03:10.620><c> pushed</c><00:03:11.459><c> to</c><00:03:12.000><c> your</c><00:03:12.620><c> repo</c><00:03:13.620><c> on</c><00:03:14.099><c> the</c><00:03:14.220><c> main</c>
+will be pushed to your repo on the main
+will be pushed to your repo on the main
+branch
+branch
+branch
+the<00:03:15.959><c> one</c><00:03:16.080><c> you</c><00:03:16.260><c> selected</c><00:03:16.739><c> here</c><00:03:16.920><c> and</c><00:03:17.760><c> once</c><00:03:18.420><c> you</c>
+the one you selected here and once you
+the one you selected here and once you
+create<00:03:18.780><c> the</c><00:03:19.440><c> instance</c><00:03:19.860><c> of</c><00:03:20.280><c> the</c><00:03:20.459><c> web</c><00:03:20.580><c> app</c><00:03:20.819><c> it</c>
+create the instance of the web app it
+create the instance of the web app it
+will<00:03:22.019><c> add</c><00:03:22.440><c> it</c><00:03:23.159><c> will</c><00:03:23.340><c> run</c><00:03:23.580><c> the</c><00:03:24.300><c> GitHub</c><00:03:24.720><c> action</c>
+will add it will run the GitHub action
+will add it will run the GitHub action
+behind<00:03:25.500><c> the</c><00:03:25.620><c> scenes</c><00:03:25.920><c> however</c><00:03:26.220><c> I</c><00:03:27.000><c> suggest</c><00:03:27.360><c> that</c>
+behind the scenes however I suggest that
+behind the scenes however I suggest that
+you<00:03:27.780><c> don't</c><00:03:28.019><c> do</c><00:03:28.260><c> this</c><00:03:28.560><c> if</c><00:03:29.400><c> you</c><00:03:29.519><c> want</c><00:03:29.700><c> you</c><00:03:29.879><c> can</c>
+you don't do this if you want you can
+you don't do this if you want you can
+you<00:03:31.260><c> can</c><00:03:31.379><c> keep</c><00:03:31.620><c> it</c><00:03:31.860><c> you</c><00:03:32.099><c> can</c><00:03:32.159><c> copy</c><00:03:32.519><c> the</c><00:03:32.760><c> content</c>
+you can keep it you can copy the content
+you can keep it you can copy the content
+just<00:03:33.959><c> keep</c><00:03:34.620><c> it</c><00:03:34.860><c> somewhere</c><00:03:35.280><c> on</c><00:03:35.580><c> the</c><00:03:36.060><c> clipboard</c>
+just keep it somewhere on the clipboard
+just keep it somewhere on the clipboard
+or<00:03:36.780><c> on</c><00:03:37.440><c> a</c><00:03:37.620><c> notepad</c><00:03:37.980><c> but</c><00:03:38.519><c> I</c><00:03:38.819><c> don't</c><00:03:38.879><c> advise</c><00:03:39.300><c> you</c>
+or on a notepad but I don't advise you
+or on a notepad but I don't advise you
+to<00:03:39.720><c> do</c><00:03:39.900><c> that</c><00:03:40.080><c> because</c><00:03:40.440><c> this</c><00:03:40.920><c> will</c><00:03:41.159><c> take</c><00:03:41.400><c> about</c>
+to do that because this will take about
+to do that because this will take about
+20<00:03:42.540><c> minutes</c><00:03:42.959><c> to</c><00:03:43.440><c> complete</c>
+20 minutes to complete
+20 minutes to complete
+so<00:03:45.599><c> I</c><00:03:46.140><c> suggest</c><00:03:46.500><c> that</c><00:03:46.739><c> you</c><00:03:46.980><c> disable</c><00:03:47.580><c> this</c><00:03:48.000><c> okay</c>
+so I suggest that you disable this okay
+so I suggest that you disable this okay
+so<00:03:49.920><c> I'm</c><00:03:50.099><c> going</c><00:03:50.340><c> to</c><00:03:50.459><c> leave</c><00:03:50.819><c> this</c><00:03:51.360><c> as</c><00:03:51.659><c> default</c>
+so I'm going to leave this as default
+so I'm going to leave this as default
+and<00:03:52.860><c> for</c><00:03:53.040><c> the</c><00:03:53.220><c> tags</c><00:03:53.640><c> I</c><00:03:54.060><c> like</c><00:03:54.180><c> to</c><00:03:54.360><c> add</c><00:03:54.540><c> the</c><00:03:54.720><c> text</c>
+and for the tags I like to add the text
+and for the tags I like to add the text
+because<00:03:55.140><c> they</c><00:03:55.500><c> are</c><00:03:55.680><c> they</c><00:03:56.340><c> keep</c><00:03:56.519><c> things</c>
+because they are they keep things
+because they are they keep things
+organized
+organized
+organized
+here<00:03:58.620><c> on</c><00:03:58.860><c> the</c><00:03:58.980><c> review</c><00:03:59.159><c> you</c><00:03:59.580><c> can</c><00:03:59.700><c> see</c><00:04:00.060><c> the</c>
+here on the review you can see the
+here on the review you can see the
+estimate<00:04:01.019><c> and</c>
+estimate and
+estimate and
+a<00:04:03.480><c> few</c><00:04:03.720><c> things</c><00:04:04.080><c> about</c><00:04:04.920><c> your</c><00:04:05.540><c> application</c><00:04:06.540><c> I</c>
+a few things about your application I
+a few things about your application I
+will<00:04:07.620><c> create</c>
+so<00:04:12.120><c> it</c><00:04:12.360><c> took</c><00:04:12.659><c> maximum</c><00:04:13.260><c> two</c><00:04:13.500><c> minutes</c><00:04:13.680><c> now</c><00:04:14.280><c> let's</c>
+so it took maximum two minutes now let's
+so it took maximum two minutes now let's
+go<00:04:14.819><c> to</c><00:04:15.000><c> the</c><00:04:15.180><c> resource</c><00:04:15.720><c> if</c><00:04:16.620><c> you</c><00:04:16.799><c> click</c><00:04:17.220><c> on</c><00:04:17.400><c> the</c>
+go to the resource if you click on the
+go to the resource if you click on the
+default<00:04:18.060><c> domain</c><00:04:18.479><c> you</c><00:04:19.139><c> can</c><00:04:19.320><c> see</c><00:04:19.620><c> the</c><00:04:20.400><c> default</c>
+default domain you can see the default
+default domain you can see the default
+page<00:04:21.180><c> that</c><00:04:21.479><c> comes</c><00:04:21.780><c> with</c><00:04:22.079><c> Azure</c><00:04:22.860><c> web</c><00:04:23.040><c> app</c><00:04:23.280><c> now</c>
+page that comes with Azure web app now
+page that comes with Azure web app now
+the<00:04:24.000><c> next</c><00:04:24.120><c> step</c><00:04:24.360><c> is</c><00:04:24.540><c> to</c><00:04:24.720><c> create</c><00:04:24.900><c> mySQL</c>
+the next step is to create mySQL
+the next step is to create mySQL
+database<00:04:26.580><c> so</c><00:04:27.180><c> I</c><00:04:27.300><c> will</c><00:04:27.360><c> go</c><00:04:27.600><c> to</c><00:04:27.780><c> Resource</c><00:04:28.500><c> MySQL</c>
+database so I will go to Resource MySQL
+database so I will go to Resource MySQL
+this<00:04:31.500><c> is</c><00:04:31.560><c> the</c><00:04:31.680><c> one</c><00:04:31.800><c> that</c><00:04:31.979><c> I'm</c><00:04:32.160><c> going</c><00:04:32.340><c> to</c><00:04:32.520><c> choose</c>
+this is the one that I'm going to choose
+this is the one that I'm going to choose
+Azure<00:04:33.660><c> database</c><00:04:34.080><c> for</c><00:04:34.320><c> MySQL</c>
+Azure database for MySQL
+Azure database for MySQL
+let's<00:04:35.880><c> hit</c><00:04:36.120><c> create</c><00:04:36.419><c> I'll</c><00:04:37.199><c> choose</c><00:04:37.620><c> flexible</c>
+let's hit create I'll choose flexible
+let's hit create I'll choose flexible
+server
+server
+server
+here<00:04:40.620><c> I</c><00:04:40.919><c> am</c><00:04:40.979><c> going</c><00:04:41.220><c> to</c><00:04:41.400><c> choose</c><00:04:41.880><c> the</c><00:04:42.120><c> same</c>
+here I am going to choose the same
+here I am going to choose the same
+Resource<00:04:42.780><c> Group</c><00:04:43.020><c> that</c><00:04:43.440><c> I</c><00:04:43.919><c> created</c><00:04:44.400><c> for</c><00:04:44.880><c> my</c><00:04:45.120><c> web</c>
+Resource Group that I created for my web
+Resource Group that I created for my web
+app
+and<00:04:48.840><c> for</c><00:04:49.500><c> the</c><00:04:49.740><c> server</c><00:04:50.160><c> name</c>
+and for the server name
+and for the server name
+I<00:04:51.900><c> will</c><00:04:52.020><c> say</c><00:04:52.199><c> div</c><00:04:52.620><c> pointed</c>
+I will say div pointed
+I will say div pointed
+DB
+the<00:04:58.620><c> mascal</c><00:04:59.100><c> version</c><00:04:59.340><c> it</c>
+the mascal version it
+the mascal version it
+I<00:05:02.400><c> will</c><00:05:02.580><c> leave</c><00:05:02.820><c> this</c><00:05:03.240><c> as</c><00:05:03.660><c> for</c><00:05:04.380><c> development</c><00:05:05.040><c> or</c>
+I will leave this as for development or
+I will leave this as for development or
+hobby<00:05:05.940><c> but</c><00:05:06.780><c> for</c><00:05:06.960><c> you</c><00:05:07.139><c> to</c><00:05:07.320><c> project</c><00:05:07.500><c> be</c><00:05:07.979><c> careful</c>
+hobby but for you to project be careful
+hobby but for you to project be careful
+what<00:05:08.639><c> you</c><00:05:08.820><c> choose</c><00:05:09.120><c> I</c><00:05:09.600><c> will</c><00:05:09.780><c> not</c><00:05:09.900><c> enable</c><00:05:10.199><c> the</c>
+what you choose I will not enable the
+what you choose I will not enable the
+high<00:05:10.560><c> availability</c><00:05:11.360><c> MySQL</c><00:05:12.360><c> authentication</c>
+high availability MySQL authentication
+high availability MySQL authentication
+only<00:05:13.199><c> so</c><00:05:13.620><c> this</c><00:05:14.040><c> is</c><00:05:14.220><c> basically</c><00:05:14.520><c> the</c><00:05:14.940><c> username</c>
+only so this is basically the username
+only so this is basically the username
+and<00:05:15.600><c> password</c><00:05:15.840><c> that</c><00:05:16.320><c> you</c><00:05:16.440><c> will</c><00:05:16.620><c> get</c><00:05:16.800><c> so</c><00:05:17.340><c> I</c><00:05:17.520><c> put</c>
+and password that you will get so I put
+and password that you will get so I put
+my<00:05:17.940><c> on</c><00:05:18.240><c> username</c><00:05:19.080><c> and</c><00:05:19.199><c> password</c>
+my on username and password
+my on username and password
+so<00:05:21.000><c> for</c><00:05:21.180><c> the</c><00:05:21.300><c> networking</c><00:05:21.840><c> I</c><00:05:22.199><c> will</c><00:05:22.320><c> set</c><00:05:22.440><c> it</c><00:05:22.680><c> as</c>
+so for the networking I will set it as
+so for the networking I will set it as
+public<00:05:23.639><c> but</c><00:05:24.120><c> public</c><00:05:24.360><c> doesn't</c><00:05:24.720><c> mean</c><00:05:24.960><c> it's</c>
+public but public doesn't mean it's
+public but public doesn't mean it's
+available<00:05:25.500><c> for</c><00:05:25.979><c> everybody</c><00:05:26.280><c> no</c><00:05:26.940><c> this</c><00:05:27.300><c> is</c>
+available for everybody no this is
+available for everybody no this is
+available<00:05:28.139><c> for</c><00:05:28.680><c> your</c><00:05:28.919><c> research</c><00:05:29.460><c> group</c><00:05:29.759><c> and</c>
+available for your research group and
+available for your research group and
+you<00:05:30.539><c> can</c><00:05:30.600><c> have</c><00:05:30.840><c> your</c><00:05:31.199><c> own</c><00:05:31.440><c> firewall</c><00:05:32.340><c> rules</c><00:05:33.060><c> and</c>
+you can have your own firewall rules and
+you can have your own firewall rules and
+you<00:05:33.780><c> can</c><00:05:33.900><c> allow</c><00:05:34.380><c> uh</c><00:05:35.100><c> your</c><00:05:35.400><c> own</c><00:05:35.520><c> IP</c><00:05:35.940><c> or</c><00:05:36.419><c> all</c><00:05:36.900><c> the</c>
+you can allow uh your own IP or all the
+you can allow uh your own IP or all the
+IPS<00:05:37.400><c> range</c><00:05:38.400><c> of</c><00:05:38.520><c> all</c><00:05:38.639><c> the</c><00:05:38.820><c> IPS</c><00:05:39.120><c> and</c><00:05:39.419><c> then</c><00:05:39.539><c> you</c>
+IPS range of all the IPS and then you
+IPS range of all the IPS and then you
+can<00:05:39.900><c> once</c><00:05:40.680><c> you've</c><00:05:40.919><c> finished</c><00:05:41.160><c> the</c><00:05:42.080><c> the</c>
+can once you've finished the the
+can once you've finished the the
+deployment<00:05:44.340><c> you</c><00:05:45.060><c> can</c><00:05:45.180><c> come</c><00:05:45.419><c> here</c><00:05:45.720><c> and</c><00:05:45.960><c> remove</c>
+deployment you can come here and remove
+deployment you can come here and remove
+this<00:05:46.500><c> rule</c>
+this rule
+this rule
+so<00:05:48.360><c> I</c><00:05:48.780><c> will</c><00:05:48.960><c> choose</c><00:05:49.440><c> this</c><00:05:49.680><c> first</c>
+I<00:05:52.740><c> want</c><00:05:52.800><c> you</c><00:05:52.979><c> to</c><00:05:53.100><c> notice</c><00:05:53.400><c> here</c><00:05:53.580><c> that</c><00:05:53.880><c> this</c><00:05:54.300><c> Con</c>
+I want you to notice here that this Con
+I want you to notice here that this Con
+supports<00:05:55.860><c> the</c><00:05:56.100><c> encrypted</c><00:05:56.639><c> connections</c><00:05:57.320><c> and</c>
+supports the encrypted connections and
+supports the encrypted connections and
+we<00:05:58.620><c> are</c><00:05:58.740><c> going</c><00:05:58.860><c> to</c><00:05:59.039><c> talk</c><00:05:59.220><c> about</c><00:05:59.340><c> this</c><00:05:59.639><c> later</c>
+we are going to talk about this later
+we are going to talk about this later
+for<00:06:02.100><c> security</c><00:06:02.340><c> I</c><00:06:02.699><c> will</c><00:06:02.820><c> keep</c><00:06:02.940><c> it</c><00:06:03.120><c> as</c><00:06:03.300><c> it</c><00:06:03.479><c> is</c>
+for security I will keep it as it is
+for security I will keep it as it is
+Four<00:06:04.440><c> Tags</c><00:06:04.860><c> I</c><00:06:05.039><c> will</c><00:06:05.160><c> do</c><00:06:05.340><c> the</c><00:06:05.520><c> same</c><00:06:05.699><c> environment</c>
+Four Tags I will do the same environment
+Four Tags I will do the same environment
+it's<00:06:07.680><c> production</c>
+it's production
+it's production
+project
+project
+project
+log
+log
+log
+review<00:06:13.020><c> I</c><00:06:13.740><c> will</c><00:06:13.919><c> create</c><00:06:14.340><c> now</c>
+review I will create now
+review I will create now
+I<00:06:16.199><c> will</c><00:06:16.320><c> go</c><00:06:16.500><c> back</c><00:06:16.740><c> to</c><00:06:17.100><c> my</c><00:06:17.460><c> app</c><00:06:18.000><c> service</c><00:06:18.360><c> that</c>
+I will go back to my app service that
+I will go back to my app service that
+div<00:06:19.620><c> pointed</c>
+div pointed
+div pointed
+this<00:06:21.660><c> is</c><00:06:21.780><c> basically</c><00:06:22.080><c> the</c><00:06:22.440><c> web</c><00:06:22.560><c> app</c>
+this is basically the web app
+this is basically the web app
+and
+and
+and
+I<00:06:26.220><c> will</c><00:06:26.400><c> go</c><00:06:26.639><c> to</c><00:06:26.880><c> explain</c><00:06:27.780><c> a</c><00:06:28.199><c> few</c><00:06:28.319><c> things</c><00:06:28.560><c> first</c>
+I will go to explain a few things first
+I will go to explain a few things first
+before<00:06:29.280><c> we</c><00:06:29.639><c> dive</c><00:06:29.880><c> in</c><00:06:30.120><c> into</c><00:06:30.300><c> the</c><00:06:30.600><c> deployment</c><00:06:30.960><c> so</c>
+before we dive in into the deployment so
+before we dive in into the deployment so
+if<00:06:31.919><c> you</c><00:06:32.039><c> go</c><00:06:32.280><c> to</c><00:06:32.400><c> SSH</c>
+if you go to SSH
+if you go to SSH
+and<00:06:34.860><c> the</c><00:06:35.100><c> development</c><00:06:35.520><c> tools</c><00:06:35.940><c> assh</c><00:06:36.479><c> go</c><00:06:37.319><c> you</c>
+and the development tools assh go you
+and the development tools assh go you
+need<00:06:38.340><c> to</c><00:06:38.520><c> make</c><00:06:38.819><c> notice</c><00:06:39.240><c> of</c><00:06:39.600><c> one</c><00:06:39.900><c> important</c>
+need to make notice of one important
+need to make notice of one important
+thing<00:06:41.220><c> here</c><00:06:41.460><c> is</c><00:06:41.699><c> that</c><00:06:41.940><c> anything</c><00:06:42.720><c> outside</c><00:06:43.460><c> home</c>
+thing here is that anything outside home
+thing here is that anything outside home
+is<00:06:45.300><c> not</c><00:06:45.539><c> persisted</c><00:06:46.080><c> meaning</c><00:06:46.740><c> anything</c><00:06:47.460><c> that</c>
+is not persisted meaning anything that
+is not persisted meaning anything that
+is<00:06:48.479><c> sitting</c><00:06:49.259><c> outside</c><00:06:49.620><c> the</c><00:06:49.979><c> home</c><00:06:50.220><c> directory</c>
+is sitting outside the home directory
+is sitting outside the home directory
+is<00:06:51.900><c> going</c><00:06:52.080><c> to</c><00:06:52.199><c> be</c><00:06:52.380><c> deleted</c><00:06:52.919><c> at</c><00:06:53.639><c> every</c><00:06:54.020><c> server</c>
+is going to be deleted at every server
+is going to be deleted at every server
+restart
+restart
+restart
+and<00:06:56.819><c> this</c><00:06:57.000><c> is</c><00:06:57.120><c> important</c><00:06:57.539><c> to</c><00:06:57.780><c> know</c><00:06:57.900><c> because</c>
+and this is important to know because
+and this is important to know because
+our<00:06:59.160><c> nginx</c><00:06:59.759><c> configuration</c><00:07:00.500><c> lives</c><00:07:01.500><c> outside</c>
+our nginx configuration lives outside
+our nginx configuration lives outside
+the<00:07:02.400><c> home</c><00:07:02.580><c> directory</c><00:07:03.240><c> our</c><00:07:04.020><c> PHP</c><00:07:04.880><c> configuration</c>
+the home directory our PHP configuration
+the home directory our PHP configuration
+lives<00:07:06.360><c> outside</c><00:07:06.600><c> the</c><00:07:06.900><c> home</c><00:07:07.080><c> directory</c><00:07:07.560><c> so</c><00:07:08.100><c> this</c>
+lives outside the home directory so this
+lives outside the home directory so this
+is<00:07:08.520><c> very</c><00:07:08.699><c> important</c><00:07:09.060><c> to</c><00:07:09.300><c> know</c><00:07:09.419><c> so</c>
+is very important to know so
+is very important to know so
+I<00:07:11.639><c> will</c><00:07:11.759><c> go</c><00:07:12.000><c> back</c><00:07:12.180><c> here</c><00:07:12.479><c> again</c>
+I will go back here again
+I will go back here again
+to
+to
+to
+the<00:07:16.020><c> wood</c><00:07:16.139><c> app</c><00:07:16.500><c> and</c><00:07:17.039><c> I</c><00:07:17.220><c> want</c><00:07:17.460><c> you</c><00:07:17.639><c> to</c><00:07:17.759><c> go</c><00:07:18.000><c> to</c><00:07:18.240><c> the</c>
+the wood app and I want you to go to the
+the wood app and I want you to go to the
+configuration
+as<00:07:21.720><c> we</c><00:07:21.900><c> all</c><00:07:22.080><c> know</c><00:07:22.259><c> in</c><00:07:22.740><c> laravel</c><00:07:23.400><c> there</c><00:07:24.000><c> is</c><00:07:24.180><c> a</c><00:07:24.360><c> DOT</c>
+as we all know in laravel there is a DOT
+as we all know in laravel there is a DOT
+end<00:07:24.900><c> file</c>
+end file
+end file
+but<00:07:28.080><c> when</c><00:07:28.319><c> you</c><00:07:28.500><c> deploy</c><00:07:28.919><c> to</c><00:07:29.160><c> Azure</c><00:07:29.520><c> web</c><00:07:29.759><c> app</c><00:07:30.000><c> you</c>
+but when you deploy to Azure web app you
+but when you deploy to Azure web app you
+don't<00:07:30.599><c> need</c><00:07:30.900><c> this</c><00:07:31.199><c> file</c><00:07:31.440><c> at</c><00:07:31.680><c> all</c><00:07:31.800><c> you</c><00:07:32.220><c> don't</c>
+don't need this file at all you don't
+don't need this file at all you don't
+need<00:07:32.460><c> to</c><00:07:32.699><c> copy</c><00:07:33.060><c> this</c><00:07:33.240><c> file</c><00:07:33.419><c> to</c><00:07:33.660><c> begin</c><00:07:33.720><c> with</c>
+need to copy this file to begin with
+need to copy this file to begin with
+this<00:07:34.620><c> file</c><00:07:34.919><c> doesn't</c><00:07:35.340><c> need</c><00:07:35.699><c> to</c><00:07:35.880><c> exist</c><00:07:36.300><c> at</c><00:07:36.900><c> all</c>
+this file doesn't need to exist at all
+this file doesn't need to exist at all
+what<00:07:37.800><c> you</c><00:07:37.979><c> need</c><00:07:38.280><c> to</c><00:07:38.759><c> do</c><00:07:38.940><c> is</c><00:07:39.780><c> to</c><00:07:39.960><c> come</c><00:07:40.080><c> to</c><00:07:40.259><c> the</c>
+what you need to do is to come to the
+what you need to do is to come to the
+configuration<00:07:40.919><c> file</c><00:07:41.340><c> and</c><00:07:42.300><c> you</c><00:07:42.539><c> can</c><00:07:42.660><c> add</c><00:07:43.020><c> your</c>
+configuration file and you can add your
+configuration file and you can add your
+environment<00:07:43.979><c> files</c><00:07:44.520><c> here</c><00:07:44.759><c> you</c><00:07:45.240><c> can</c><00:07:45.360><c> just</c><00:07:45.840><c> add</c>
+environment files here you can just add
+environment files here you can just add
+the<00:07:46.319><c> application</c><00:07:46.740><c> setting</c><00:07:47.160><c> and</c><00:07:47.460><c> you</c><00:07:47.580><c> add</c><00:07:47.819><c> for</c>
+the application setting and you add for
+the application setting and you add for
+example
+example
+example
+the<00:07:49.680><c> app</c>
+the app
+the app
+name<00:07:51.840><c> and</c><00:07:52.319><c> you</c><00:07:52.440><c> call</c><00:07:52.620><c> it</c><00:07:52.800><c> whatever</c><00:07:52.919><c> you</c><00:07:53.340><c> want</c>
+okay
+now<00:07:59.819><c> if</c><00:08:00.180><c> you</c><00:08:00.300><c> go</c><00:08:00.479><c> to</c><00:08:00.599><c> the</c><00:08:00.840><c> general</c><00:08:01.020><c> settings</c>
+now if you go to the general settings
+now if you go to the general settings
+there<00:08:02.400><c> is</c><00:08:02.580><c> a</c><00:08:02.940><c> startup</c><00:08:03.300><c> command</c><00:08:03.900><c> this</c><00:08:04.740><c> is</c>
+there is a startup command this is
+there is a startup command this is
+basically<00:08:05.580><c> a</c><00:08:06.240><c> file</c><00:08:06.419><c> or</c><00:08:07.080><c> you</c><00:08:07.800><c> can</c><00:08:07.860><c> put</c><00:08:08.099><c> here</c>
+basically a file or you can put here
+basically a file or you can put here
+some<00:08:08.580><c> commands</c>
+some commands
+some commands
+but<00:08:10.139><c> I</c><00:08:10.319><c> advise</c><00:08:10.620><c> you</c><00:08:10.800><c> to</c><00:08:11.099><c> have</c><00:08:11.400><c> your</c><00:08:11.819><c> own</c><00:08:12.060><c> file</c>
+but I advise you to have your own file
+but I advise you to have your own file
+that<00:08:13.139><c> is</c>
+that is
+that is
+inside<00:08:14.819><c> the</c><00:08:15.180><c> home</c><00:08:15.300><c> directory</c>
+inside the home directory
+inside the home directory
+and<00:08:17.699><c> this</c><00:08:18.180><c> file</c><00:08:18.360><c> will</c><00:08:18.720><c> run</c><00:08:18.960><c> at</c><00:08:19.919><c> each</c><00:08:20.280><c> system</c>
+and this file will run at each system
+and this file will run at each system
+reboot
+reboot
+reboot
+and<00:08:23.580><c> the</c><00:08:23.759><c> best</c><00:08:23.879><c> practice</c><00:08:24.300><c> is</c><00:08:25.020><c> to</c><00:08:25.379><c> have</c><00:08:25.680><c> it</c><00:08:25.860><c> like</c>
+and the best practice is to have it like
+and the best practice is to have it like
+this<00:08:26.280><c> home</c><00:08:26.639><c> slash</c><00:08:27.479><c> home</c><00:08:27.660><c> slash</c>
+this home slash home slash
+this home slash home slash
+start<00:08:29.580><c> up</c><00:08:30.680><c> dot</c><00:08:31.680><c> sh</c>
+start up dot sh
+start up dot sh
+basically<00:08:34.260><c> at</c><00:08:34.860><c> each</c><00:08:35.039><c> system</c><00:08:35.279><c> restart</c><00:08:35.640><c> the</c>
+basically at each system restart the
+basically at each system restart the
+server<00:08:36.779><c> will</c><00:08:36.959><c> look</c><00:08:37.140><c> for</c><00:08:37.380><c> this</c><00:08:37.680><c> file</c><00:08:37.919><c> and</c>
+server will look for this file and
+server will look for this file and
+executes<00:08:39.360><c> it</c><00:08:39.599><c> so</c><00:08:40.020><c> I</c><00:08:40.380><c> will</c><00:08:40.500><c> save</c>
+executes it so I will save
+executes it so I will save
+my<00:08:42.000><c> configuration</c><00:08:42.659><c> here</c>
+my configuration here
+my configuration here
+and<00:08:44.339><c> at</c><00:08:44.640><c> each</c><00:08:45.060><c> time</c><00:08:45.480><c> that</c><00:08:45.779><c> you</c><00:08:45.959><c> save</c><00:08:46.200><c> this</c>
+and at each time that you save this
+and at each time that you save this
+you<00:08:47.760><c> will</c><00:08:47.880><c> notice</c><00:08:48.320><c> this</c><00:08:49.320><c> is</c><00:08:49.680><c> going</c><00:08:49.920><c> to</c><00:08:50.100><c> restart</c>
+you will notice this is going to restart
+you will notice this is going to restart
+this<00:08:51.600><c> is</c><00:08:51.779><c> again</c><00:08:52.100><c> one</c><00:08:53.100><c> of</c><00:08:53.220><c> the</c><00:08:53.459><c> things</c><00:08:53.760><c> that</c><00:08:54.120><c> you</c>
+this is again one of the things that you
+this is again one of the things that you
+should<00:08:54.480><c> be</c><00:08:54.600><c> aware</c><00:08:54.899><c> of</c><00:08:55.019><c> that</c><00:08:55.860><c> each</c><00:08:56.459><c> each</c><00:08:56.760><c> time</c>
+should be aware of that each each time
+should be aware of that each each time
+you<00:08:57.420><c> change</c><00:08:57.779><c> an</c><00:08:58.200><c> application</c><00:08:58.620><c> setting</c><00:08:59.160><c> or</c><00:09:00.000><c> in</c>
+you change an application setting or in
+you change an application setting or in
+the<00:09:00.360><c> general</c><00:09:00.480><c> settings</c>
+the general settings
+the general settings
+or<00:09:02.399><c> you</c><00:09:02.580><c> manually</c><00:09:02.940><c> reboot</c><00:09:03.420><c> it</c><00:09:03.600><c> or</c><00:09:03.959><c> you</c><00:09:04.200><c> make</c>
+or you manually reboot it or you make
+or you manually reboot it or you make
+code<00:09:05.399><c> changes</c><00:09:05.880><c> and</c><00:09:06.120><c> you</c><00:09:06.300><c> push</c><00:09:06.740><c> this</c><00:09:07.740><c> is</c><00:09:07.860><c> later</c>
+code changes and you push this is later
+code changes and you push this is later
+but<00:09:09.240><c> this</c><00:09:09.600><c> means</c><00:09:09.899><c> that</c><00:09:10.019><c> there</c><00:09:10.260><c> is</c><00:09:10.380><c> a</c><00:09:10.500><c> system</c>
+but this means that there is a system
+but this means that there is a system
+restart<00:09:11.399><c> now</c><00:09:11.940><c> you</c><00:09:12.120><c> can</c><00:09:12.240><c> see</c><00:09:12.420><c> in</c><00:09:12.839><c> the</c><00:09:13.140><c> home</c>
+restart now you can see in the home
+restart now you can see in the home
+directory
+directory
+directory
+I<00:09:15.959><c> have</c>
+I have
+I have
+a<00:09:17.339><c> site</c><00:09:18.620><c> and</c><00:09:19.620><c> inside</c><00:09:20.040><c> the</c><00:09:20.399><c> site</c><00:09:20.580><c> you</c><00:09:20.760><c> will</c><00:09:20.940><c> see</c>
+a site and inside the site you will see
+a site and inside the site you will see
+that
+there<00:09:24.360><c> is</c><00:09:24.600><c> a</c><00:09:24.839><c> WWE</c><00:09:25.440><c> root</c>
+and<00:09:30.899><c> this</c><00:09:31.500><c> is</c><00:09:31.800><c> basically</c><00:09:32.279><c> the</c>
+and this is basically the
+and this is basically the
+you<00:09:33.779><c> can</c><00:09:33.899><c> see</c><00:09:34.080><c> the</c><00:09:34.260><c> hosting</c><00:09:34.680><c> start</c><00:09:34.980><c> that</c><00:09:35.399><c> HTML</c>
+you can see the hosting start that HTML
+you can see the hosting start that HTML
+this<00:09:36.240><c> is</c><00:09:36.360><c> what's</c><00:09:37.140><c> there</c><00:09:37.440><c> on</c><00:09:37.740><c> the</c><00:09:37.920><c> server</c><00:09:38.820><c> now</c>
+this is what's there on the server now
+this is what's there on the server now
+as<00:09:39.600><c> I</c><00:09:39.720><c> said</c><00:09:39.839><c> we</c><00:09:40.440><c> need</c><00:09:40.560><c> to</c><00:09:40.680><c> put</c><00:09:40.980><c> at</c><00:09:41.640><c> our</c><00:09:41.820><c> home</c>
+as I said we need to put at our home
+as I said we need to put at our home
+directory<00:09:42.600><c> a</c><00:09:43.200><c> file</c><00:09:43.440><c> that's</c><00:09:43.740><c> called</c><00:09:43.980><c> startup</c>
+directory a file that's called startup
+directory a file that's called startup
+so<00:09:44.760><c> to</c><00:09:45.000><c> do</c><00:09:45.240><c> that</c><00:09:45.360><c> you</c><00:09:45.720><c> just</c><00:09:45.899><c> say</c><00:09:46.680><c> vim</c><00:09:47.480><c> and</c>
+so to do that you just say vim and
+so to do that you just say vim and
+startup<00:09:48.959><c> I</c><00:09:49.560><c> am</c><00:09:49.680><c> in</c><00:09:49.920><c> the</c><00:09:50.040><c> home</c><00:09:50.160><c> directory</c><00:09:50.640><c> by</c>
+startup I am in the home directory by
+startup I am in the home directory by
+the<00:09:51.060><c> way</c>
+the way
+the way
+and<00:09:53.399><c> here</c><00:09:53.580><c> you</c><00:09:53.880><c> add</c><00:09:54.120><c> your</c><00:09:54.360><c> files</c><00:09:54.839><c> sorry</c><00:09:55.440><c> your</c>
+and here you add your files sorry your
+and here you add your files sorry your
+commands
+commands
+commands
+and<00:09:58.260><c> they</c><00:09:58.440><c> have</c><00:09:58.620><c> prepared</c><00:09:59.220><c> a</c><00:09:59.580><c> gist</c><00:10:00.060><c> file</c><00:10:00.720><c> that</c>
+and they have prepared a gist file that
+and they have prepared a gist file that
+has<00:10:01.620><c> everything</c><00:10:01.920><c> that</c><00:10:02.339><c> you</c><00:10:02.459><c> need</c>
+has everything that you need
+has everything that you need
+to<00:10:04.260><c> make</c><00:10:04.680><c> this</c><00:10:04.980><c> because</c><00:10:05.220><c> it's</c><00:10:05.459><c> not</c><00:10:05.700><c> just</c><00:10:05.880><c> one</c>
+to make this because it's not just one
+to make this because it's not just one
+file<00:10:06.300><c> it's</c><00:10:06.540><c> multiple</c><00:10:06.959><c> files</c><00:10:07.260><c> but</c><00:10:07.440><c> the</c><00:10:07.560><c> most</c>
+file it's multiple files but the most
+file it's multiple files but the most
+important<00:10:08.100><c> one</c><00:10:08.279><c> is</c><00:10:08.640><c> the</c><00:10:08.940><c> startup</c><00:10:09.360><c> so</c><00:10:09.540><c> I</c><00:10:09.720><c> will</c>
+important one is the startup so I will
+important one is the startup so I will
+copy
+copy
+copy
+all<00:10:11.640><c> this</c>
+all this
+all this
+I<00:10:13.380><c> will</c><00:10:13.560><c> come</c><00:10:13.740><c> to</c><00:10:13.980><c> my</c><00:10:14.339><c> startup</c><00:10:15.060><c> file</c><00:10:15.440><c> paste</c><00:10:16.440><c> and</c>
+I will come to my startup file paste and
+I will come to my startup file paste and
+let<00:10:17.220><c> me</c><00:10:17.339><c> explain</c><00:10:17.519><c> this</c><00:10:17.940><c> on</c><00:10:18.120><c> the</c><00:10:18.240><c> file</c><00:10:18.480><c> itself</c>
+let me explain this on the file itself
+let me explain this on the file itself
+on<00:10:19.260><c> the</c><00:10:19.440><c> gist</c><00:10:20.160><c> it's</c><00:10:20.640><c> easier</c><00:10:21.000><c> so</c><00:10:21.600><c> the</c><00:10:21.779><c> first</c>
+on the gist it's easier so the first
+on the gist it's easier so the first
+thing<00:10:22.200><c> nginx</c><00:10:23.040><c> configuration</c><00:10:23.580><c> copied</c><00:10:24.120><c> then</c>
+thing nginx configuration copied then
+thing nginx configuration copied then
+PHP<00:10:25.500><c> copied</c>
+PHP copied
+PHP copied
+then<00:10:27.600><c> if</c><00:10:28.140><c> you</c><00:10:28.260><c> have</c><00:10:28.500><c> some</c>
+then if you have some
+then if you have some
+packages<00:10:31.019><c> that</c><00:10:31.680><c> you</c><00:10:31.800><c> need</c><00:10:31.920><c> to</c><00:10:32.040><c> install</c><00:10:32.220><c> here</c>
+packages that you need to install here
+packages that you need to install here
+for<00:10:33.300><c> example</c><00:10:33.600><c> I</c><00:10:34.140><c> am</c><00:10:34.820><c> installing</c><00:10:35.820><c> packages</c><00:10:36.240><c> to</c>
+for example I am installing packages to
+for example I am installing packages to
+enable<00:10:36.839><c> web</c><00:10:37.380><c> B</c><00:10:37.680><c> file</c><00:10:37.980><c> conversion</c><00:10:38.519><c> then</c><00:10:39.240><c> I</c><00:10:39.480><c> am</c>
+enable web B file conversion then I am
+enable web B file conversion then I am
+installing<00:10:40.459><c> a</c><00:10:41.459><c> supervisor</c><00:10:42.300><c> to</c><00:10:42.779><c> enable</c>
+installing a supervisor to enable
+installing a supervisor to enable
+the<00:10:44.820><c> worker</c><00:10:45.180><c> then</c><00:10:45.720><c> I</c><00:10:46.440><c> am</c><00:10:46.680><c> doing</c><00:10:46.920><c> my</c><00:10:47.339><c> own</c>
+the worker then I am doing my own
+the worker then I am doing my own
+laravelworker.conf
+laravelworker.conf
+laravelworker.conf
+the<00:10:50.940><c> configuration</c><00:10:51.420><c> for</c><00:10:51.720><c> larva</c><00:10:52.200><c> worker</c><00:10:52.620><c> and</c>
+the configuration for larva worker and
+the configuration for larva worker and
+as<00:10:53.339><c> you</c><00:10:53.459><c> can</c><00:10:53.579><c> see</c><00:10:53.640><c> this</c><00:10:53.940><c> sits</c><00:10:54.420><c> also</c><00:10:54.779><c> outside</c>
+as you can see this sits also outside
+as you can see this sits also outside
+the<00:10:56.339><c> home</c><00:10:56.459><c> directory</c><00:10:57.079><c> then</c><00:10:58.079><c> we</c><00:10:58.440><c> perform</c>
+the home directory then we perform
+the home directory then we perform
+nginx<00:11:00.060><c> restart</c><00:11:00.800><c> supervisor</c><00:11:01.800><c> start</c><00:11:02.160><c> and</c><00:11:03.060><c> again</c>
+nginx restart supervisor start and again
+nginx restart supervisor start and again
+if<00:11:03.480><c> you</c><00:11:03.600><c> don't</c><00:11:03.720><c> have</c><00:11:03.899><c> a</c><00:11:04.019><c> queues</c><00:11:04.320><c> you</c><00:11:04.680><c> can</c><00:11:04.740><c> just</c>
+if you don't have a queues you can just
+if you don't have a queues you can just
+remove<00:11:05.100><c> the</c><00:11:05.399><c> supervisor</c><00:11:06.240><c> things</c><00:11:06.839><c> here</c>
+remove the supervisor things here
+remove the supervisor things here
+and
+and
+and
+later<00:11:10.079><c> at</c>
+later at
+later at
+26<00:11:12.380><c> until</c><00:11:13.380><c> 43</c>
+these<00:11:17.700><c> are</c><00:11:17.940><c> basically</c><00:11:18.899><c> a</c><00:11:19.500><c> PHP</c><00:11:20.040><c> arts</c><00:11:20.459><c> and</c>
+these are basically a PHP arts and
+these are basically a PHP arts and
+commands<00:11:21.060><c> I</c><00:11:21.839><c> am</c><00:11:22.019><c> going</c><00:11:22.140><c> to</c><00:11:22.320><c> do</c><00:11:22.560><c> one</c><00:11:23.160><c> change</c>
+commands I am going to do one change
+commands I am going to do one change
+here<00:11:24.000><c> I</c><00:11:24.240><c> will</c><00:11:24.420><c> put</c><00:11:24.720><c> seed</c><00:11:25.700><c> because</c><00:11:26.700><c> this</c><00:11:27.240><c> is</c>
+here I will put seed because this is
+here I will put seed because this is
+like<00:11:27.660><c> a</c><00:11:28.140><c> staging</c><00:11:28.620><c> thing</c><00:11:28.800><c> and</c><00:11:29.700><c> finally</c>
+like a staging thing and finally
+like a staging thing and finally
+if<00:11:31.260><c> you</c><00:11:31.440><c> notice</c><00:11:31.740><c> how</c><00:11:31.920><c> to</c><00:11:32.100><c> run</c><00:11:32.459><c> the</c><00:11:32.940><c> worker</c><00:11:33.420><c> this</c>
+if you notice how to run the worker this
+if you notice how to run the worker this
+is<00:11:33.720><c> how</c><00:11:33.899><c> you</c><00:11:34.019><c> do</c><00:11:34.140><c> it</c><00:11:34.260><c> you</c><00:11:34.620><c> just</c><00:11:34.740><c> use</c><00:11:35.100><c> the</c><00:11:35.279><c> no</c><00:11:35.459><c> Hub</c>
+is how you do it you just use the no Hub
+is how you do it you just use the no Hub
+and<00:11:36.420><c> end</c><00:11:36.600><c> it</c><00:11:36.839><c> with</c><00:11:37.019><c> an</c><00:11:37.200><c> and</c>
+and end it with an and
+and end it with an and
+so<00:11:38.459><c> this</c><00:11:38.880><c> basically</c><00:11:39.839><c> runs</c><00:11:40.200><c> in</c><00:11:40.320><c> the</c><00:11:40.500><c> background</c>
+so this basically runs in the background
+so this basically runs in the background
+because<00:11:41.160><c> you</c><00:11:41.399><c> need</c><00:11:41.519><c> the</c><00:11:41.760><c> worker</c><00:11:42.120><c> to</c><00:11:42.240><c> run</c><00:11:42.420><c> in</c>
+because you need the worker to run in
+because you need the worker to run in
+the<00:11:42.899><c> background</c><00:11:43.200><c> so</c><00:11:43.860><c> back</c><00:11:44.100><c> to</c><00:11:44.279><c> our</c><00:11:44.399><c> file</c><00:11:44.839><c> uh</c><00:11:45.839><c> as</c>
+the background so back to our file uh as
+the background so back to our file uh as
+I<00:11:46.200><c> said</c><00:11:46.320><c> I</c><00:11:46.620><c> will</c><00:11:46.800><c> just</c>
+I said I will just
+I said I will just
+make<00:11:48.360><c> one</c><00:11:48.660><c> small</c><00:11:48.899><c> change</c><00:11:49.140><c> here</c><00:11:49.440><c> instead</c><00:11:50.339><c> of</c>
+make one small change here instead of
+make one small change here instead of
+PHP<00:11:51.480><c> my</c><00:11:51.779><c> grid</c><00:11:52.680><c> I</c><00:11:53.220><c> would</c><00:11:53.339><c> say</c><00:11:53.579><c> that's</c><00:11:54.240><c> the</c><00:11:54.540><c> seed</c>
+PHP my grid I would say that's the seed
+PHP my grid I would say that's the seed
+as<00:11:55.260><c> well</c><00:11:55.440><c> then</c><00:11:55.920><c> I'm</c><00:11:56.160><c> going</c><00:11:56.399><c> to</c>
+as well then I'm going to
+as well then I'm going to
+write<00:11:58.200><c> the</c><00:11:58.440><c> file</c><00:11:59.100><c> so</c><00:11:59.880><c> we</c><00:12:00.540><c> have</c><00:12:00.720><c> our</c><00:12:01.019><c> startup</c>
+write the file so we have our startup
+write the file so we have our startup
+command<00:12:02.880><c> file</c><00:12:03.180><c> now</c><00:12:04.140><c> we</c><00:12:04.560><c> need</c><00:12:04.740><c> the</c><00:12:04.980><c> nginx</c>
+command file now we need the nginx
+command file now we need the nginx
+configuration
+configuration
+configuration
+our<00:12:07.019><c> code</c><00:12:07.320><c> is</c><00:12:07.500><c> just</c><00:12:07.680><c> default</c>
+our code is just default
+our code is just default
+and<00:12:10.140><c> I</c><00:12:10.320><c> will</c><00:12:10.500><c> go</c><00:12:10.680><c> to</c>
+and I will go to
+and I will go to
+uh
+uh
+uh
+this<00:12:13.560><c> one</c>
+this one
+this one
+I<00:12:14.820><c> will</c><00:12:14.940><c> copy</c><00:12:15.360><c> and</c><00:12:15.779><c> paste</c>
+I will copy and paste
+I will copy and paste
+again<00:12:17.700><c> this</c><00:12:18.180><c> is</c><00:12:18.300><c> if</c><00:12:18.779><c> you</c><00:12:18.899><c> go</c><00:12:19.079><c> to</c><00:12:19.200><c> a</c><00:12:19.800><c> lot</c><00:12:19.920><c> of</c><00:12:20.100><c> a</c>
+again this is if you go to a lot of a
+again this is if you go to a lot of a
+deployment<00:12:20.640><c> you</c><00:12:20.880><c> will</c><00:12:21.000><c> see</c><00:12:21.120><c> a</c><00:12:21.300><c> similar</c><00:12:21.600><c> one</c>
+deployment you will see a similar one
+deployment you will see a similar one
+here<00:12:22.079><c> I</c><00:12:22.380><c> just</c><00:12:22.560><c> added</c><00:12:22.920><c> a</c><00:12:23.040><c> few</c><00:12:23.160><c> things</c><00:12:23.339><c> from</c><00:12:23.820><c> the</c>
+here I just added a few things from the
+here I just added a few things from the
+default<00:12:24.899><c> that</c><00:12:25.260><c> came</c><00:12:25.560><c> with</c><00:12:25.800><c> web</c><00:12:26.760><c> app</c><00:12:27.000><c> and</c><00:12:27.360><c> I</c>
+default that came with web app and I
+default that came with web app and I
+will<00:12:27.660><c> just</c><00:12:27.779><c> write</c><00:12:27.959><c> the</c><00:12:28.200><c> file</c><00:12:28.380><c> then</c><00:12:28.800><c> I</c><00:12:29.040><c> will</c>
+will just write the file then I will
+will just write the file then I will
+create<00:12:29.459><c> a</c><00:12:30.120><c> new</c><00:12:30.240><c> file</c><00:12:30.480><c> for</c><00:12:30.980><c> PS3</c><00:12:31.980><c> with</c><00:12:32.220><c> an</c><00:12:32.399><c> ionic</c>
+so<00:12:57.420><c> I</c><00:12:57.600><c> have</c><00:12:57.720><c> created</c><00:12:58.079><c> all</c><00:12:58.380><c> the</c><00:12:58.500><c> files</c>
+so I have created all the files
+so I have created all the files
+it's<00:13:00.480><c> for</c><00:13:00.779><c> four</c><00:13:01.079><c> files</c><00:13:01.560><c> and</c><00:13:01.920><c> you</c><00:13:02.279><c> have</c><00:13:02.339><c> to</c>
+it's for four files and you have to
+it's for four files and you have to
+remember<00:13:02.639><c> that</c><00:13:03.120><c> the</c><00:13:03.779><c> file</c><00:13:03.899><c> naming</c><00:13:04.320><c> is</c>
+remember that the file naming is
+remember that the file naming is
+important<00:13:04.800><c> here</c><00:13:04.980><c> because</c><00:13:05.339><c> I</c><00:13:06.000><c> am</c><00:13:06.120><c> copying</c>
+important here because I am copying
+important here because I am copying
+default<00:13:07.260><c> I'm</c><00:13:07.440><c> copying</c><00:13:08.480><c> php.ini</c><00:13:09.480><c> and</c><00:13:09.720><c> I</c><00:13:09.839><c> am</c>
+default I'm copying php.ini and I am
+default I'm copying php.ini and I am
+copying<00:13:10.440><c> laravel</c><00:13:11.100><c> Dash</c><00:13:11.459><c> worker</c><00:13:11.880><c> Dot</c><00:13:12.300><c> conf</c>
+copying laravel Dash worker Dot conf
+copying laravel Dash worker Dot conf
+now<00:13:14.820><c> remember</c><00:13:15.000><c> when</c><00:13:15.480><c> we</c><00:13:15.600><c> created</c><00:13:15.959><c> the</c><00:13:16.200><c> MySQL</c>
+now remember when we created the MySQL
+now remember when we created the MySQL
+service<00:13:17.220><c> it</c><00:13:18.120><c> was</c><00:13:18.300><c> mentioning</c><00:13:18.720><c> that</c><00:13:19.079><c> it's</c>
+service it was mentioning that it's
+service it was mentioning that it's
+encrypted
+encrypted
+encrypted
+now<00:13:21.839><c> we</c><00:13:22.019><c> have</c><00:13:22.139><c> to</c><00:13:22.320><c> reflect</c><00:13:22.740><c> this</c><00:13:23.459><c> on</c><00:13:23.940><c> our</c>
+now we have to reflect this on our
+now we have to reflect this on our
+config<00:13:25.399><c> file</c><00:13:26.399><c> of</c><00:13:26.760><c> database</c>
+config file of database
+config file of database
+I<00:13:28.860><c> will</c><00:13:28.980><c> duplicate</c><00:13:29.459><c> this</c><00:13:29.700><c> line</c><00:13:29.880><c> I</c><00:13:30.600><c> will</c>
+I will duplicate this line I will
+I will duplicate this line I will
+comment<00:13:31.380><c> the</c><00:13:31.740><c> first</c><00:13:32.040><c> one</c><00:13:32.220><c> just</c><00:13:32.760><c> for</c><00:13:33.000><c> reference</c>
+comment the first one just for reference
+comment the first one just for reference
+and<00:13:34.139><c> instead</c><00:13:34.560><c> of</c>
+and instead of
+and instead of
+C8<00:13:36.060><c> will</c><00:13:36.360><c> be</c><00:13:36.540><c> key</c>
+C8 will be key
+C8 will be key
+and<00:13:39.120><c> I</c><00:13:39.480><c> will</c><00:13:39.660><c> just</c><00:13:39.959><c> make</c><00:13:40.260><c> the</c><00:13:40.620><c> environment</c>
+and I will just make the environment
+and I will just make the environment
+also<00:13:41.459><c> the</c><00:13:41.700><c> same</c><00:13:41.940><c> key</c>
+also the same key
+also the same key
+I<00:13:44.639><c> will</c><00:13:44.760><c> save</c><00:13:44.880><c> this</c><00:13:45.180><c> however</c><00:13:45.920><c> I</c><00:13:46.920><c> still</c><00:13:47.100><c> need</c>
+I will save this however I still need
+I will save this however I still need
+the<00:13:47.639><c> key</c><00:13:47.820><c> for</c><00:13:48.480><c> the</c><00:13:48.660><c> key</c><00:13:48.839><c> you</c><00:13:49.200><c> need</c><00:13:49.320><c> to</c><00:13:49.500><c> download</c>
+the key for the key you need to download
+the key for the key you need to download
+it<00:13:49.920><c> from</c><00:13:50.220><c> Microsoft</c><00:13:50.700><c> so</c><00:13:51.300><c> I</c><00:13:51.480><c> will</c><00:13:51.660><c> set</c>
+it from Microsoft so I will set
+it from Microsoft so I will set
+for<00:13:53.100><c> Azure</c><00:13:53.519><c> Baltimore</c><00:13:54.200><c> cyber</c><00:13:55.200><c> trust</c><00:13:55.980><c> root</c><00:13:56.459><c> dot</c>
+for Azure Baltimore cyber trust root dot
+for Azure Baltimore cyber trust root dot
+Circle<00:13:57.120><c> Bim</c>
+Circle Bim
+Circle Bim
+I'm<00:13:58.800><c> sure</c><00:13:59.040><c> you</c><00:13:59.220><c> can</c><00:13:59.339><c> find</c><00:13:59.519><c> it</c><00:13:59.760><c> you</c><00:14:00.540><c> just</c><00:14:00.779><c> go</c><00:14:01.200><c> to</c>
+I'm sure you can find it you just go to
+I'm sure you can find it you just go to
+this<00:14:02.160><c> documentation</c>
+this documentation
+this documentation
+and<00:14:04.620><c> here</c><00:14:04.860><c> is</c><00:14:04.980><c> the</c><00:14:05.100><c> files</c><00:14:05.399><c> you</c><00:14:05.519><c> just</c>
+download<00:14:09.200><c> now</c><00:14:10.200><c> this</c>
+download now this
+download now this
+file<00:14:11.820><c> I</c><00:14:12.180><c> will</c><00:14:12.360><c> copy</c><00:14:12.779><c> it</c><00:14:12.899><c> into</c><00:14:13.260><c> my</c><00:14:13.620><c> solution</c><00:14:13.920><c> so</c>
+file I will copy it into my solution so
+file I will copy it into my solution so
+I<00:14:14.339><c> pasted</c><00:14:14.700><c> it</c><00:14:14.820><c> here</c><00:14:15.060><c> into</c><00:14:15.360><c> my</c>
+I pasted it here into my
+I pasted it here into my
+project<00:14:16.680><c> folder</c>
+project folder
+project folder
+as<00:14:18.720><c> you</c><00:14:18.839><c> can</c><00:14:18.959><c> see</c><00:14:19.079><c> I</c><00:14:19.260><c> have</c><00:14:19.500><c> it</c><00:14:19.680><c> here</c><00:14:19.920><c> also</c><00:14:20.279><c> now</c>
+as you can see I have it here also now
+as you can see I have it here also now
+it's<00:14:21.420><c> time</c><00:14:21.720><c> to</c><00:14:22.079><c> make</c><00:14:22.440><c> our</c><00:14:22.800><c> environment</c><00:14:23.639><c> file</c>
+it's time to make our environment file
+it's time to make our environment file
+and<00:14:24.959><c> basically</c><00:14:25.380><c> it's</c><00:14:25.620><c> in</c><00:14:25.800><c> the</c><00:14:25.980><c> configuration</c>
+and basically it's in the configuration
+and basically it's in the configuration
+under<00:14:27.380><c> the</c><00:14:28.380><c> application</c><00:14:28.800><c> settings</c><00:14:29.040><c> so</c><00:14:29.880><c> I'll</c>
+under the application settings so I'll
+under the application settings so I'll
+add<00:14:30.360><c> each</c><00:14:30.660><c> K</c><00:14:31.019><c> and</c><00:14:31.260><c> value</c><00:14:31.500><c> into</c><00:14:32.339><c> this</c>
+add each K and value into this
+add each K and value into this
+application<00:14:33.899><c> settings</c><00:14:34.200><c> while</c><00:14:34.860><c> I</c><00:14:35.040><c> am</c><00:14:35.160><c> editing</c>
+application settings while I am editing
+application settings while I am editing
+the<00:14:35.820><c> environment</c><00:14:36.360><c> file</c><00:14:37.019><c> all</c><00:14:37.680><c> the</c><00:14:37.860><c> application</c>
+the environment file all the application
+the environment file all the application
+settings<00:14:38.519><c> I</c><00:14:39.240><c> needed</c><00:14:39.600><c> the</c><00:14:39.779><c> server</c><00:14:40.079><c> name</c><00:14:40.260><c> of</c><00:14:40.500><c> the</c>
+settings I needed the server name of the
+settings I needed the server name of the
+database<00:14:41.040><c> so</c><00:14:41.399><c> this</c><00:14:41.579><c> is</c><00:14:41.639><c> the</c><00:14:41.760><c> one</c><00:14:41.940><c> I</c><00:14:42.180><c> forgot</c><00:14:42.480><c> to</c>
+database so this is the one I forgot to
+database so this is the one I forgot to
+copy<00:14:42.959><c> it</c><00:14:43.139><c> you</c><00:14:43.800><c> can</c><00:14:43.980><c> always</c><00:14:44.519><c> come</c><00:14:44.940><c> back</c><00:14:45.120><c> to</c><00:14:45.420><c> the</c>
+copy it you can always come back to the
+copy it you can always come back to the
+service<00:14:46.260><c> you</c><00:14:46.620><c> created</c><00:14:46.980><c> and</c><00:14:47.459><c> copy</c><00:14:47.880><c> the</c><00:14:48.060><c> host</c><00:14:48.480><c> so</c>
+service you created and copy the host so
+service you created and copy the host so
+this<00:14:49.199><c> is</c><00:14:49.260><c> the</c><00:14:49.440><c> host</c><00:14:49.620><c> Port</c><00:14:50.160><c> it's</c><00:14:50.519><c> the</c><00:14:50.820><c> same</c><00:14:51.000><c> and</c>
+this is the host Port it's the same and
+this is the host Port it's the same and
+database<00:14:52.560><c> and</c><00:14:53.399><c> database</c><00:14:53.820><c> I</c><00:14:54.000><c> will</c><00:14:54.120><c> create</c><00:14:54.300><c> it</c>
+database and database I will create it
+database and database I will create it
+later
+this<00:14:58.440><c> is</c><00:14:58.500><c> the</c><00:14:58.680><c> username</c><00:14:59.100><c> and</c><00:14:59.339><c> this</c><00:14:59.579><c> is</c><00:14:59.760><c> the</c>
+this is the username and this is the
+this is the username and this is the
+password<00:15:00.420><c> okay</c>
+password okay
+password okay
+I<00:15:02.459><c> keep</c><00:15:02.639><c> the</c><00:15:02.820><c> app</c><00:15:02.940><c> key</c><00:15:03.180><c> to</c><00:15:03.660><c> do</c><00:15:03.839><c> that</c><00:15:04.380><c> later</c><00:15:04.800><c> also</c>
+I keep the app key to do that later also
+I keep the app key to do that later also
+so<00:15:06.300><c> this</c><00:15:06.480><c> is</c><00:15:06.600><c> my</c><00:15:06.779><c> settings</c><00:15:06.959><c> I</c><00:15:07.920><c> will</c><00:15:08.040><c> copy</c><00:15:08.399><c> it</c>
+so this is my settings I will copy it
+so this is my settings I will copy it
+come<00:15:09.660><c> back</c><00:15:09.839><c> to</c><00:15:10.079><c> the</c><00:15:10.260><c> app</c><00:15:10.380><c> service</c><00:15:10.680><c> itself</c>
+come back to the app service itself
+come back to the app service itself
+on<00:15:12.720><c> the</c><00:15:12.839><c> configuration</c><00:15:13.260><c> file</c><00:15:13.680><c> I</c><00:15:13.920><c> am</c><00:15:14.100><c> editing</c>
+on the configuration file I am editing
+on the configuration file I am editing
+using<00:15:15.000><c> the</c><00:15:15.120><c> advanced</c><00:15:15.480><c> editor</c><00:15:15.899><c> I</c><00:15:16.380><c> would</c><00:15:16.560><c> paste</c>
+using the advanced editor I would paste
+using the advanced editor I would paste
+all<00:15:16.980><c> my</c><00:15:17.160><c> things</c><00:15:17.339><c> here</c><00:15:17.720><c> okay</c><00:15:18.720><c> so</c><00:15:19.560><c> I</c><00:15:19.800><c> have</c><00:15:19.920><c> all</c><00:15:20.279><c> my</c>
+all my things here okay so I have all my
+all my things here okay so I have all my
+keys<00:15:21.060><c> ready</c><00:15:21.899><c> I</c><00:15:22.500><c> will</c><00:15:22.680><c> hit</c><00:15:22.860><c> save</c>
+keys ready I will hit save
+keys ready I will hit save
+continue<00:15:24.899><c> Now</c><00:15:25.560><c> to</c><00:15:25.740><c> create</c><00:15:25.860><c> the</c><00:15:26.100><c> database</c>
+continue Now to create the database
+continue Now to create the database
+I<00:15:28.019><c> will</c><00:15:28.199><c> connect</c><00:15:28.380><c> to</c><00:15:28.680><c> Azure</c><00:15:29.040><c> data</c><00:15:29.459><c> Studio</c><00:15:29.579><c> but</c>
+I will connect to Azure data Studio but
+I will connect to Azure data Studio but
+you<00:15:30.180><c> can</c><00:15:30.300><c> use</c><00:15:30.480><c> whatever</c><00:15:31.220><c> you</c><00:15:32.220><c> want</c><00:15:32.339><c> but</c><00:15:32.639><c> this</c>
+you can use whatever you want but this
+you can use whatever you want but this
+is<00:15:32.940><c> the</c><00:15:33.180><c> one</c><00:15:33.360><c> that</c><00:15:33.540><c> I</c><00:15:33.720><c> am</c><00:15:33.839><c> using</c><00:15:34.079><c> I</c><00:15:34.740><c> will</c><00:15:34.860><c> create</c>
+is the one that I am using I will create
+is the one that I am using I will create
+a<00:15:35.279><c> new</c><00:15:35.399><c> connection</c><00:15:35.639><c> it's</c><00:15:36.540><c> a</c><00:15:36.779><c> MySQL</c><00:15:37.260><c> connection</c>
+a new connection it's a MySQL connection
+a new connection it's a MySQL connection
+it's<00:15:38.459><c> an</c><00:15:38.699><c> extension</c><00:15:39.240><c> that</c><00:15:39.480><c> I</c><00:15:39.660><c> installed</c><00:15:40.019><c> also</c>
+it's an extension that I installed also
+it's an extension that I installed also
+to<00:15:40.680><c> Azure</c><00:15:41.339><c> data</c><00:15:41.699><c> Studio</c><00:15:41.880><c> server</c><00:15:42.660><c> name</c>
+to Azure data Studio server name
+to Azure data Studio server name
+authentication<00:15:44.040><c> it's</c><00:15:44.399><c> password</c><00:15:44.699><c> so</c><00:15:45.300><c> this</c><00:15:45.660><c> is</c>
+authentication it's password so this is
+authentication it's password so this is
+the<00:15:46.139><c> user</c>
+this<00:15:50.699><c> is</c><00:15:50.880><c> the</c><00:15:51.120><c> password</c>
+number<00:15:57.660><c> connect</c>
+number connect
+number connect
+so<00:16:00.360><c> it's</c><00:16:00.540><c> empty</c><00:16:01.019><c> basically</c><00:16:01.380><c> there's</c><00:16:01.620><c> no</c>
+so it's empty basically there's no
+so it's empty basically there's no
+database<00:16:02.279><c> so</c><00:16:02.579><c> I</c><00:16:02.699><c> will</c><00:16:02.820><c> create</c><00:16:03.000><c> a</c><00:16:03.180><c> new</c><00:16:03.300><c> one</c><00:16:03.480><c> it's</c>
+database so I will create a new one it's
+database so I will create a new one it's
+the<00:16:04.139><c> same</c><00:16:04.260><c> one</c><00:16:04.440><c> that</c><00:16:04.680><c> I</c><00:16:04.800><c> am</c><00:16:04.920><c> using</c><00:16:05.279><c> here</c>
+and<00:16:08.880><c> UTF</c><00:16:09.720><c> I</c><00:16:10.199><c> like</c><00:16:10.320><c> to</c><00:16:10.500><c> use</c><00:16:10.680><c> the</c><00:16:10.980><c> general</c>
+and UTF I like to use the general
+and UTF I like to use the general
+c<00:16:12.480><c> i</c>
+create
+create
+create
+so<00:16:18.000><c> I</c><00:16:18.120><c> have</c><00:16:18.240><c> a</c><00:16:18.360><c> Twist</c><00:16:18.839><c> ready</c>
+so I have a Twist ready
+so I have a Twist ready
+now<00:16:20.220><c> let's</c><00:16:20.399><c> move</c><00:16:20.699><c> to</c><00:16:21.000><c> the</c><00:16:21.240><c> GitHub</c><00:16:21.660><c> actions</c><00:16:22.380><c> and</c>
+now let's move to the GitHub actions and
+now let's move to the GitHub actions and
+the<00:16:23.279><c> workflow</c><00:16:23.699><c> and</c><00:16:24.060><c> how</c><00:16:24.240><c> to</c><00:16:24.420><c> create</c><00:16:24.540><c> it</c><00:16:24.839><c> so</c>
+the workflow and how to create it so
+the workflow and how to create it so
+first<00:16:25.380><c> we</c><00:16:25.620><c> need</c><00:16:25.740><c> to</c><00:16:25.860><c> connect</c><00:16:26.100><c> our</c><00:16:26.579><c> GitHub</c>
+first we need to connect our GitHub
+first we need to connect our GitHub
+account<00:16:27.720><c> with</c><00:16:28.320><c> the</c><00:16:28.500><c> web</c><00:16:28.620><c> apps</c><00:16:28.980><c> I</c><00:16:29.100><c> will</c><00:16:29.220><c> go</c><00:16:29.339><c> to</c>
+account with the web apps I will go to
+account with the web apps I will go to
+the<00:16:29.639><c> deployment</c><00:16:30.120><c> Center</c><00:16:30.420><c> I</c><00:16:31.320><c> will</c><00:16:31.560><c> end</c><00:16:31.860><c> the</c>
+the deployment Center I will end the
+the deployment Center I will end the
+settings<00:16:32.220><c> I</c><00:16:32.820><c> will</c><00:16:33.060><c> connect</c><00:16:33.360><c> I</c><00:16:33.660><c> will</c><00:16:33.839><c> choose</c><00:16:34.079><c> my</c>
+settings I will connect I will choose my
+settings I will connect I will choose my
+source<00:16:34.560><c> to</c><00:16:34.680><c> be</c><00:16:34.800><c> GitHub</c><00:16:35.160><c> this</c><00:16:35.940><c> is</c><00:16:36.060><c> my</c><00:16:36.240><c> source</c>
+source to be GitHub this is my source
+source to be GitHub this is my source
+and<00:16:37.920><c> if</c><00:16:38.160><c> you</c><00:16:38.339><c> don't</c><00:16:38.519><c> have</c><00:16:38.940><c> the</c><00:16:39.899><c> GitHub</c><00:16:40.259><c> account</c>
+and if you don't have the GitHub account
+and if you don't have the GitHub account
+already<00:16:41.579><c> connected</c><00:16:42.240><c> you</c><00:16:43.199><c> can</c><00:16:43.259><c> connect</c><00:16:43.500><c> it</c>
+already connected you can connect it
+already connected you can connect it
+from<00:16:44.220><c> here</c><00:16:44.339><c> there</c><00:16:44.579><c> will</c><00:16:44.759><c> be</c><00:16:44.940><c> a</c><00:16:45.180><c> sign</c><00:16:45.480><c> in</c><00:16:45.660><c> button</c>
+from here there will be a sign in button
+from here there will be a sign in button
+and<00:16:47.279><c> once</c><00:16:48.060><c> you</c><00:16:48.540><c> do</c><00:16:48.839><c> that</c>
+and once you do that
+and once you do that
+um
+um
+um
+I<00:16:50.940><c> suggest</c><00:16:51.240><c> that</c><00:16:51.420><c> you</c><00:16:51.660><c> wait</c><00:16:52.079><c> maybe</c><00:16:52.620><c> 15</c><00:16:53.399><c> to</c><00:16:53.820><c> 30</c>
+I suggest that you wait maybe 15 to 30
+I suggest that you wait maybe 15 to 30
+minutes<00:16:54.420><c> before</c><00:16:55.139><c> you</c><00:16:55.680><c> continue</c><00:16:55.980><c> the</c><00:16:56.880><c> reason</c>
+minutes before you continue the reason
+minutes before you continue the reason
+I'm<00:16:57.360><c> saying</c><00:16:57.839><c> this</c><00:16:58.019><c> is</c><00:16:58.199><c> that</c><00:16:58.380><c> because</c>
+I'm saying this is that because
+I'm saying this is that because
+previously<00:16:59.820><c> I</c><00:17:00.660><c> faced</c><00:17:01.199><c> a</c><00:17:01.380><c> challenge</c><00:17:01.620><c> as</c><00:17:02.399><c> you</c>
+previously I faced a challenge as you
+previously I faced a challenge as you
+can<00:17:02.639><c> see</c><00:17:02.759><c> this</c><00:17:03.120><c> is</c><00:17:03.240><c> my</c><00:17:03.480><c> previous</c><00:17:03.660><c> recording</c>
+can see this is my previous recording
+can see this is my previous recording
+and<00:17:04.620><c> it</c><00:17:04.799><c> was</c><00:17:05.040><c> showing</c><00:17:05.699><c> me</c><00:17:05.819><c> some</c><00:17:06.120><c> errors</c>
+and it was showing me some errors
+and it was showing me some errors
+so<00:17:07.860><c> the</c><00:17:08.160><c> solution</c><00:17:08.459><c> was</c><00:17:08.760><c> just</c><00:17:09.000><c> to</c><00:17:09.240><c> wait</c><00:17:09.419><c> for</c><00:17:09.720><c> 15</c>
+so the solution was just to wait for 15
+so the solution was just to wait for 15
+minutes<00:17:10.260><c> to</c><00:17:10.620><c> 30</c><00:17:10.799><c> minutes</c>
+minutes to 30 minutes
+minutes to 30 minutes
+after<00:17:13.380><c> you</c><00:17:13.740><c> just</c><00:17:13.860><c> sign</c><00:17:14.100><c> in</c><00:17:14.339><c> and</c><00:17:15.260><c> it</c><00:17:16.260><c> will</c><00:17:16.439><c> work</c>
+after you just sign in and it will work
+after you just sign in and it will work
+fine<00:17:16.860><c> again</c><00:17:17.520><c> this</c><00:17:17.939><c> is</c><00:17:18.059><c> only</c><00:17:18.540><c> the</c><00:17:18.780><c> first</c><00:17:18.900><c> time</c>
+fine again this is only the first time
+fine again this is only the first time
+that<00:17:19.380><c> you</c><00:17:19.559><c> connect</c><00:17:19.799><c> your</c><00:17:20.220><c> account</c><00:17:20.579><c> with</c><00:17:22.020><c> with</c>
+that you connect your account with with
+that you connect your account with with
+azure.com
+now<00:17:27.600><c> I</c><00:17:28.199><c> will</c><00:17:28.319><c> choose</c><00:17:28.620><c> my</c><00:17:28.860><c> project</c>
+I'll<00:17:38.640><c> select</c><00:17:39.000><c> my</c><00:17:39.299><c> branch</c>
+I'll select my branch
+I'll select my branch
+and<00:17:40.919><c> here</c>
+and here
+and here
+you<00:17:42.660><c> will</c><00:17:42.780><c> see</c><00:17:42.960><c> a</c><00:17:43.200><c> configuration</c><00:17:43.620><c> file</c><00:17:44.160><c> so</c><00:17:44.880><c> it</c>
+you will see a configuration file so it
+you will see a configuration file so it
+copy<00:17:45.419><c> its</c><00:17:45.660><c> content</c>
+if<00:17:50.100><c> you</c><00:17:50.220><c> notice</c><00:17:50.520><c> that</c><00:17:50.760><c> the</c><00:17:50.940><c> file</c><00:17:51.059><c> path</c><00:17:51.299><c> will</c><00:17:51.600><c> be</c>
+if you notice that the file path will be
+if you notice that the file path will be
+dot<00:17:52.080><c> GitHub</c><00:17:52.700><c> workflow</c><00:17:53.700><c> slash</c><00:17:54.380><c> maindiff</c>
+dot GitHub workflow slash maindiff
+dot GitHub workflow slash maindiff
+pointed<00:17:55.799><c> to</c><00:17:56.160><c> tml</c><00:17:56.940><c> so</c><00:17:57.539><c> what</c><00:17:57.780><c> I</c><00:17:58.020><c> will</c><00:17:58.200><c> do</c><00:17:58.440><c> is</c>
+pointed to tml so what I will do is
+pointed to tml so what I will do is
+a<00:18:00.360><c> similar</c><00:18:00.720><c> thing</c><00:18:00.900><c> but</c><00:18:01.620><c> instead</c><00:18:02.039><c> of</c><00:18:02.880><c> relying</c>
+a similar thing but instead of relying
+a similar thing but instead of relying
+on<00:18:03.539><c> Microsoft</c><00:18:03.960><c> to</c><00:18:04.140><c> do</c><00:18:04.260><c> this</c><00:18:04.380><c> because</c><00:18:04.620><c> I</c><00:18:04.980><c> don't</c>
+on Microsoft to do this because I don't
+on Microsoft to do this because I don't
+want<00:18:05.220><c> this</c><00:18:05.460><c> this</c><00:18:05.700><c> will</c><00:18:06.000><c> take</c><00:18:06.240><c> 30</c><00:18:06.720><c> minutes</c><00:18:07.080><c> 20</c>
+want this this will take 30 minutes 20
+want this this will take 30 minutes 20
+minutes<00:18:08.340><c> at</c><00:18:08.640><c> best</c>
+minutes at best
+minutes at best
+to<00:18:09.840><c> deploy</c><00:18:10.260><c> and</c><00:18:11.100><c> we</c><00:18:11.280><c> don't</c><00:18:11.460><c> want</c><00:18:11.640><c> that</c><00:18:11.880><c> so</c><00:18:12.419><c> I</c>
+to deploy and we don't want that so I
+to deploy and we don't want that so I
+will<00:18:12.720><c> go</c><00:18:12.900><c> back</c><00:18:13.080><c> to</c><00:18:13.260><c> my</c><00:18:13.440><c> solution</c><00:18:13.740><c> here</c><00:18:14.700><c> I</c><00:18:14.880><c> will</c>
+will go back to my solution here I will
+will go back to my solution here I will
+create<00:18:15.179><c> a</c><00:18:15.419><c> new</c><00:18:15.539><c> folder</c><00:18:16.140><c> I</c><00:18:16.440><c> will</c><00:18:16.620><c> call</c><00:18:16.799><c> it</c><00:18:17.120><c> dot</c>
+create a new folder I will call it dot
+create a new folder I will call it dot
+GitHub
+GitHub
+GitHub
+then<00:18:20.580><c> I</c><00:18:20.760><c> will</c><00:18:20.940><c> create</c><00:18:21.179><c> another</c><00:18:21.480><c> folder</c><00:18:22.020><c> called</c>
+then I will create another folder called
+then I will create another folder called
+workflows
+and<00:18:28.260><c> inside</c><00:18:28.380><c> I</c><00:18:28.740><c> will</c><00:18:28.860><c> create</c><00:18:29.039><c> my</c><00:18:29.340><c> own</c><00:18:29.460><c> yaml</c>
+and inside I will create my own yaml
+and inside I will create my own yaml
+file<00:18:30.179><c> and</c><00:18:30.299><c> this</c><00:18:30.539><c> is</c><00:18:30.720><c> going</c><00:18:30.960><c> to</c><00:18:31.080><c> be</c>
+main<00:18:34.679><c> deploy</c><00:18:35.280><c> Dot</c><00:18:36.480><c> yeah</c>
+main deploy Dot yeah
+main deploy Dot yeah
+and<00:18:38.760><c> I</c><00:18:38.940><c> will</c><00:18:39.120><c> paste</c>
+and I will paste
+and I will paste
+the<00:18:40.860><c> content</c>
+the content
+the content
+so
+so
+so
+this<00:18:44.640><c> is</c><00:18:44.760><c> going</c><00:18:44.940><c> to</c><00:18:45.059><c> be</c><00:18:45.240><c> build</c><00:18:45.539><c> and</c><00:18:45.780><c> deploy</c><00:18:46.080><c> PHP</c>
+this is going to be build and deploy PHP
+this is going to be build and deploy PHP
+app<00:18:47.460><c> I'll</c><00:18:48.419><c> say</c><00:18:48.660><c> well</c><00:18:48.840><c> that's</c><00:18:48.960><c> a</c><00:18:49.080><c> lot</c><00:18:49.140><c> of</c>
+to<00:18:53.340><c> Azure</c><00:18:53.820><c> web</c><00:18:54.059><c> app</c>
+to Azure web app
+to Azure web app
+and
+and
+and
+on<00:18:57.120><c> push</c>
+on push
+on push
+to<00:18:59.039><c> main</c><00:18:59.400><c> then</c>
+to main then
+to main then
+the<00:19:02.160><c> jobs</c><00:19:02.340><c> that</c><00:19:02.640><c> will</c><00:19:02.880><c> run</c><00:19:03.059><c> it</c><00:19:03.660><c> will</c><00:19:03.840><c> use</c>
+the jobs that will run it will use
+the jobs that will run it will use
+GitHub<00:19:04.980><c> actions</c><00:19:05.640><c> version</c><00:19:06.299><c> 2</c><00:19:06.660><c> and</c><00:19:07.200><c> this</c><00:19:07.620><c> I</c><00:19:07.860><c> will</c>
+GitHub actions version 2 and this I will
+GitHub actions version 2 and this I will
+change<00:19:08.400><c> it</c><00:19:08.580><c> to</c><00:19:08.820><c> change</c><00:19:09.179><c> to</c><00:19:09.660><c> version</c><00:19:09.840><c> three</c>
+change it to change to version three
+change it to change to version three
+then<00:19:12.360><c> it's</c><00:19:13.320><c> going</c><00:19:13.559><c> to</c><00:19:13.799><c> use</c><00:19:14.280><c> PHP</c><00:19:14.880><c> 8.1</c><00:19:16.080><c> then</c><00:19:16.799><c> it</c>
+then it's going to use PHP 8.1 then it
+then it's going to use PHP 8.1 then it
+will<00:19:17.220><c> check</c><00:19:17.460><c> if</c><00:19:17.880><c> composer</c>
+will check if composer
+will check if composer
+is<00:19:20.400><c> installed</c><00:19:21.120><c> and</c><00:19:21.780><c> then</c><00:19:21.960><c> it</c><00:19:22.260><c> will</c><00:19:22.500><c> do</c><00:19:22.799><c> the</c>
+is installed and then it will do the
+is installed and then it will do the
+composer<00:19:23.520><c> thing</c><00:19:23.700><c> the</c><00:19:23.940><c> composer</c><00:19:24.419><c> install</c><00:19:24.679><c> and</c>
+composer thing the composer install and
+composer thing the composer install and
+by<00:19:25.799><c> the</c><00:19:25.919><c> way</c><00:19:25.980><c> this</c><00:19:26.340><c> is</c><00:19:26.460><c> on</c><00:19:26.760><c> GitHub</c><00:19:27.380><c> actions</c>
+by the way this is on GitHub actions
+by the way this is on GitHub actions
+it's<00:19:28.559><c> not</c><00:19:28.740><c> on</c><00:19:28.919><c> the</c><00:19:29.039><c> server</c><00:19:29.340><c> yet</c><00:19:29.520><c> so</c><00:19:30.120><c> this</c><00:19:30.419><c> is</c>
+it's not on the server yet so this is
+it's not on the server yet so this is
+just<00:19:30.960><c> building</c><00:19:31.500><c> the</c><00:19:32.280><c> file</c><00:19:32.580><c> and</c><00:19:33.240><c> then</c><00:19:33.960><c> it</c><00:19:34.620><c> will</c>
+just building the file and then it will
+just building the file and then it will
+upload<00:19:35.280><c> it</c><00:19:35.460><c> to</c><00:19:36.299><c> GitHub</c><00:19:36.900><c> action</c><00:19:37.200><c> as</c><00:19:37.679><c> an</c>
+upload it to GitHub action as an
+upload it to GitHub action as an
+artifact<00:19:38.280><c> this</c><00:19:38.700><c> also</c><00:19:39.059><c> I</c><00:19:39.179><c> will</c><00:19:39.360><c> change</c><00:19:39.539><c> it</c>
+artifact this also I will change it
+artifact this also I will change it
+the<00:19:40.919><c> actions</c><00:19:41.280><c> upload</c><00:19:41.640><c> artifact</c><00:19:42.120><c> I</c><00:19:42.360><c> will</c>
+the actions upload artifact I will
+the actions upload artifact I will
+change<00:19:42.660><c> it</c><00:19:42.840><c> to</c><00:19:43.020><c> version</c><00:19:43.140><c> 3.</c>
+change it to version 3.
+change it to version 3.
+and<00:19:45.480><c> the</c><00:19:45.660><c> download</c><00:19:45.840><c> artifact</c><00:19:46.559><c> so</c><00:19:46.740><c> I'm</c><00:19:46.919><c> here</c><00:19:47.100><c> in</c>
+and the download artifact so I'm here in
+and the download artifact so I'm here in
+the<00:19:47.400><c> on</c><00:19:47.640><c> the</c><00:19:47.820><c> deployment</c><00:19:48.360><c> I</c><00:19:49.140><c> will</c><00:19:49.260><c> change</c><00:19:49.440><c> it</c>
+the on the deployment I will change it
+the on the deployment I will change it
+to<00:19:49.799><c> version</c><00:19:49.980><c> 3</c><00:19:50.400><c> and</c><00:19:50.880><c> for</c><00:19:51.179><c> Azure</c><00:19:51.780><c> it's</c><00:19:52.380><c> version</c>
+to version 3 and for Azure it's version
+to version 3 and for Azure it's version
+2<00:19:53.039><c> yes</c><00:19:53.400><c> and</c><00:19:54.120><c> we</c><00:19:54.720><c> need</c><00:19:54.840><c> to</c><00:19:55.020><c> add</c><00:19:55.260><c> two</c><00:19:56.100><c> more</c><00:19:56.340><c> steps</c>
+2 yes and we need to add two more steps
+2 yes and we need to add two more steps
+so
+so
+so
+on<00:19:58.980><c> the</c><00:19:59.220><c> build</c><00:19:59.340><c> step</c><00:19:59.760><c> or</c><00:20:00.360><c> on</c><00:20:00.539><c> the</c><00:20:00.660><c> build</c><00:20:01.140><c> job</c>
+on the build step or on the build job
+on the build step or on the build job
+right<00:20:02.220><c> after</c><00:20:02.520><c> the</c><00:20:02.880><c> com</c><00:20:03.000><c> the</c><00:20:03.419><c> composer</c><00:20:03.900><c> is</c>
+right after the com the composer is
+right after the com the composer is
+installed<00:20:05.340><c> and</c><00:20:05.940><c> before</c><00:20:06.120><c> the</c><00:20:06.480><c> upload</c><00:20:07.020><c> artifact</c>
+installed and before the upload artifact
+installed and before the upload artifact
+because<00:20:08.100><c> this</c><00:20:08.700><c> basically</c><00:20:09.360><c> when</c><00:20:09.960><c> you</c><00:20:10.200><c> say</c>
+because this basically when you say
+because this basically when you say
+deploy<00:20:11.880><c> when</c><00:20:12.720><c> you</c><00:20:12.900><c> say</c><00:20:13.080><c> upload</c><00:20:13.500><c> artifact</c><00:20:14.039><c> it</c>
+deploy when you say upload artifact it
+deploy when you say upload artifact it
+will<00:20:14.700><c> upload</c><00:20:15.200><c> thousands</c><00:20:16.200><c> of</c><00:20:16.320><c> files</c><00:20:16.860><c> uh</c>
+will upload thousands of files uh
+will upload thousands of files uh
+separately<00:20:17.700><c> not</c><00:20:18.059><c> as</c><00:20:18.480><c> just</c><00:20:18.720><c> one</c><00:20:19.200><c> file</c><00:20:19.440><c> so</c><00:20:19.679><c> what</c>
+separately not as just one file so what
+separately not as just one file so what
+we<00:20:20.039><c> are</c><00:20:20.160><c> going</c><00:20:20.280><c> to</c><00:20:20.400><c> do</c><00:20:20.580><c> is</c><00:20:21.059><c> to</c>
+we are going to do is to
+we are going to do is to
+um
+um
+um
+so<00:20:24.179><c> here</c><00:20:24.360><c> I</c><00:20:24.600><c> will</c><00:20:24.720><c> say</c><00:20:24.900><c> zip</c><00:20:25.320><c> the</c><00:20:25.620><c> application</c>
+so here I will say zip the application
+so here I will say zip the application
+files<00:20:26.520><c> and</c><00:20:26.820><c> as</c><00:20:26.940><c> you</c><00:20:27.120><c> can</c><00:20:27.179><c> see</c>
+files and as you can see
+files and as you can see
+I<00:20:28.980><c> will</c><00:20:29.160><c> add</c><00:20:29.700><c> the</c><00:20:30.360><c> zip</c><00:20:30.539><c> Dash</c><00:20:31.140><c> r</c><00:20:31.820><c> PHP</c>
+I will add the zip Dash r PHP
+I will add the zip Dash r PHP
+app.zip<00:20:35.520><c> and</c><00:20:36.360><c> but</c><00:20:36.600><c> I</c><00:20:36.840><c> will</c><00:20:36.960><c> call</c><00:20:37.200><c> it</c><00:20:37.380><c> release</c>
+app.zip and but I will call it release
+app.zip and but I will call it release
+just<00:20:39.360><c> to</c><00:20:39.660><c> make</c><00:20:39.960><c> things</c><00:20:40.860><c> clearer</c><00:20:41.400><c> making</c><00:20:42.179><c> a</c>
+just to make things clearer making a
+just to make things clearer making a
+small<00:20:42.660><c> change</c><00:20:42.900><c> here</c><00:20:43.140><c> by</c><00:20:43.320><c> adding</c><00:20:43.679><c> this</c><00:20:43.799><c> star</c>
+small change here by adding this star
+small change here by adding this star
+we<00:20:45.660><c> add</c><00:20:45.840><c> another</c><00:20:46.020><c> step</c>
+we add another step
+we add another step
+for<00:20:47.900><c> uh</c><00:20:48.900><c> unzip</c>
+for uh unzip
+for uh unzip
+artifact
+now<00:20:59.280><c> here</c><00:20:59.520><c> you'll</c><00:20:59.880><c> notice</c><00:21:00.240><c> that</c><00:21:00.480><c> I</c><00:21:00.840><c> have</c>
+now here you'll notice that I have
+now here you'll notice that I have
+secrets<00:21:02.220><c> and</c><00:21:03.000><c> this</c><00:21:03.780><c> is</c><00:21:03.960><c> for</c>
+secrets and this is for
+secrets and this is for
+um
+um
+um
+publish<00:21:06.539><c> a</c><00:21:06.720><c> profile</c>
+publish a profile
+publish a profile
+we<00:21:08.640><c> will</c><00:21:08.760><c> come</c><00:21:08.940><c> to</c><00:21:09.059><c> this</c><00:21:09.240><c> later</c><00:21:09.480><c> I</c><00:21:10.440><c> remember</c>
+we will come to this later I remember
+we will come to this later I remember
+that<00:21:11.160><c> I</c><00:21:11.760><c> am</c><00:21:11.940><c> using</c><00:21:12.559><c> one</c>
+that I am using one
+that I am using one
+package<00:21:15.419><c> called</c><00:21:15.900><c> laravel</c><00:21:16.679><c> Nova</c><00:21:17.460><c> and</c><00:21:18.240><c> it</c>
+package called laravel Nova and it
+package called laravel Nova and it
+requires<00:21:19.260><c> an</c><00:21:20.039><c> authentication</c><00:21:20.700><c> so</c><00:21:21.360><c> I</c><00:21:21.539><c> need</c><00:21:21.660><c> to</c>
+requires an authentication so I need to
+requires an authentication so I need to
+add<00:21:22.200><c> its</c><00:21:23.100><c> configuration</c><00:21:23.700><c> just</c><00:21:24.299><c> before</c><00:21:24.480><c> the</c>
+add its configuration just before the
+add its configuration just before the
+composer<00:21:25.440><c> installed</c><00:21:26.160><c> so</c><00:21:26.880><c> here</c><00:21:27.120><c> this</c><00:21:27.539><c> is</c><00:21:27.660><c> the</c>
+composer installed so here this is the
+composer installed so here this is the
+step<00:21:28.020><c> I</c><00:21:28.320><c> am</c><00:21:28.440><c> going</c><00:21:28.559><c> to</c><00:21:28.740><c> install</c><00:21:28.980><c> the</c><00:21:29.820><c> a</c><00:21:30.059><c> lot</c><00:21:30.179><c> of</c>
+step I am going to install the a lot of
+step I am going to install the a lot of
+Anova<00:21:30.720><c> dependency</c>
+Anova dependency
+Anova dependency
+so<00:21:32.340><c> here</c><00:21:32.460><c> I</c><00:21:32.640><c> will</c><00:21:32.820><c> install</c><00:21:33.059><c> larval</c><00:21:34.220><c> dependency</c>
+so here I will install larval dependency
+so here I will install larval dependency
+and<00:21:35.820><c> I'm</c><00:21:36.059><c> using</c><00:21:36.419><c> the</c>
+and I'm using the
+and I'm using the
+a<00:21:38.460><c> lot</c><00:21:38.580><c> of</c><00:21:38.760><c> Lenova</c><00:21:39.360><c> secret</c><00:21:40.039><c> and</c><00:21:41.039><c> to</c><00:21:41.220><c> other</c>
+a lot of Lenova secret and to other
+a lot of Lenova secret and to other
+secrets
+secrets
+secrets
+you<00:21:43.380><c> can</c><00:21:43.500><c> go</c><00:21:43.679><c> to</c><00:21:43.799><c> your</c><00:21:43.980><c> solution</c><00:21:44.280><c> you</c><00:21:45.240><c> go</c><00:21:45.419><c> you</c>
+you can go to your solution you go you
+you can go to your solution you go you
+go<00:21:45.960><c> to</c><00:21:46.080><c> your</c><00:21:46.320><c> GitHub</c><00:21:46.740><c> repo</c><00:21:47.220><c> and</c>
+go to your GitHub repo and
+go to your GitHub repo and
+inside<00:21:49.260><c> your</c><00:21:49.679><c> repo</c><00:21:50.460><c> you</c><00:21:50.760><c> can</c><00:21:50.820><c> add</c><00:21:51.120><c> and</c><00:21:51.539><c> the</c>
+inside your repo you can add and the
+inside your repo you can add and the
+settings<00:21:51.900><c> go</c><00:21:52.799><c> down</c><00:21:53.039><c> to</c><00:21:53.340><c> the</c><00:21:53.460><c> secrets</c><00:21:54.059><c> and</c>
+settings go down to the secrets and
+settings go down to the secrets and
+variables<00:21:55.460><c> actions</c><00:21:56.460><c> then</c><00:21:57.120><c> here</c><00:21:57.360><c> you</c><00:21:57.539><c> add</c><00:21:57.780><c> a</c>
+variables actions then here you add a
+variables actions then here you add a
+new<00:21:58.080><c> repository</c><00:21:58.620><c> secret</c><00:21:58.940><c> I</c><00:21:59.940><c> created</c><00:22:00.299><c> two</c><00:22:00.659><c> now</c>
+new repository secret I created two now
+new repository secret I created two now
+I'll<00:22:01.440><c> create</c><00:22:01.740><c> another</c><00:22:02.039><c> one</c>
+I'll create another one
+I'll create another one
+if<00:22:03.600><c> you</c><00:22:03.780><c> remember</c><00:22:03.900><c> that's</c><00:22:04.320><c> for</c><00:22:04.559><c> the</c>
+if you remember that's for the
+if you remember that's for the
+publishing<00:22:05.159><c> profile</c><00:22:05.640><c> from</c><00:22:05.880><c> Azure</c><00:22:06.419><c> web</c><00:22:06.960><c> app</c>
+publishing profile from Azure web app
+publishing profile from Azure web app
+so<00:22:08.100><c> I</c><00:22:08.340><c> will</c><00:22:08.400><c> create</c><00:22:08.640><c> a</c><00:22:08.880><c> representative</c><00:22:09.419><c> Secret</c>
+so I will create a representative Secret
+so I will create a representative Secret
+and<00:22:11.880><c> this</c><00:22:12.659><c> one</c><00:22:12.840><c> I</c><00:22:13.020><c> will</c><00:22:13.200><c> call</c><00:22:13.380><c> it</c>
+and this one I will call it
+and this one I will call it
+similar<00:22:15.240><c> to</c><00:22:15.360><c> this</c><00:22:15.539><c> one</c><00:22:15.720><c> this</c><00:22:15.900><c> is</c><00:22:16.020><c> very</c><00:22:16.200><c> long</c><00:22:16.440><c> so</c>
+similar to this one this is very long so
+similar to this one this is very long so
+I'll<00:22:17.039><c> just</c>
+I'll just
+I'll just
+remove<00:22:18.780><c> this</c>
+copy<00:22:21.960><c> paste</c>
+copy paste
+copy paste
+and<00:22:23.940><c> the</c><00:22:24.059><c> secret</c><00:22:24.240><c> now</c><00:22:24.720><c> for</c><00:22:25.080><c> the</c><00:22:25.200><c> secret</c><00:22:25.380><c> I</c><00:22:26.159><c> will</c>
+and the secret now for the secret I will
+and the secret now for the secret I will
+bring<00:22:26.460><c> it</c><00:22:26.580><c> from</c><00:22:26.760><c> the</c><00:22:26.940><c> publishing</c><00:22:27.360><c> profile</c><00:22:27.720><c> in</c>
+bring it from the publishing profile in
+bring it from the publishing profile in
+the<00:22:28.200><c> app</c><00:22:28.559><c> you</c><00:22:28.740><c> can</c><00:22:28.860><c> see</c><00:22:28.919><c> download</c><00:22:29.159><c> publish</c>
+the app you can see download publish
+the app you can see download publish
+profile<00:22:30.179><c> I</c><00:22:30.780><c> will</c><00:22:30.960><c> download</c><00:22:31.080><c> this</c><00:22:31.860><c> is</c><00:22:31.980><c> the</c>
+profile I will download this is the
+profile I will download this is the
+content<00:22:32.460><c> I</c><00:22:32.700><c> will</c><00:22:32.820><c> copy</c><00:22:33.120><c> it</c><00:22:33.299><c> and</c><00:22:33.780><c> paste</c><00:22:34.260><c> it</c><00:22:34.320><c> into</c>
+content I will copy it and paste it into
+content I will copy it and paste it into
+the<00:22:35.100><c> secret</c>
+now<00:22:39.780><c> my</c><00:22:40.020><c> deployment</c><00:22:40.440><c> tml</c><00:22:40.919><c> file</c><00:22:41.220><c> is</c><00:22:41.340><c> ready</c><00:22:41.880><c> the</c>
+now my deployment tml file is ready the
+now my deployment tml file is ready the
+working<00:22:42.480><c> flow</c><00:22:42.900><c> is</c><00:22:42.960><c> ready</c><00:22:43.140><c> so</c><00:22:43.440><c> I</c><00:22:43.679><c> will</c><00:22:44.220><c> save</c><00:22:44.820><c> and</c>
+working flow is ready so I will save and
+working flow is ready so I will save and
+push<00:22:45.659><c> it</c>
+now<00:22:51.480><c> it's</c><00:22:51.659><c> pushed</c><00:22:52.080><c> you</c><00:22:52.260><c> will</c><00:22:52.380><c> see</c><00:22:52.559><c> it</c>
+now it's pushed you will see it
+now it's pushed you will see it
+on<00:22:53.880><c> the</c><00:22:54.059><c> repo</c><00:22:54.720><c> now</c><00:22:55.320><c> I'm</c><00:22:55.500><c> going</c><00:22:55.679><c> back</c><00:22:55.919><c> to</c><00:22:56.100><c> the</c>
+on the repo now I'm going back to the
+on the repo now I'm going back to the
+deployment<00:22:56.640><c> Center</c><00:22:56.880><c> I</c><00:22:57.179><c> will</c><00:22:57.299><c> refresh</c>
+deployment Center I will refresh
+deployment Center I will refresh
+everything<00:22:57.840><c> I</c><00:22:58.260><c> will</c><00:22:58.500><c> not</c><00:22:58.620><c> save</c><00:22:59.159><c> anything</c><00:22:59.460><c> here</c>
+and<00:23:04.860><c> here</c><00:23:05.100><c> it's</c><00:23:05.640><c> a</c><00:23:05.880><c> little</c><00:23:06.000><c> bit</c><00:23:06.179><c> different</c>
+and here it's a little bit different
+and here it's a little bit different
+because<00:23:06.900><c> it's</c><00:23:07.559><c> either</c><00:23:08.039><c> telling</c><00:23:08.820><c> me</c><00:23:08.940><c> that</c><00:23:09.240><c> I'm</c>
+because it's either telling me that I'm
+because it's either telling me that I'm
+going<00:23:09.780><c> to</c><00:23:10.080><c> create</c><00:23:10.320><c> a</c><00:23:10.740><c> new</c><00:23:10.860><c> workflow</c><00:23:11.220><c> or</c><00:23:11.700><c> use</c>
+going to create a new workflow or use
+going to create a new workflow or use
+the<00:23:12.179><c> existing</c><00:23:12.600><c> one</c><00:23:12.840><c> and</c><00:23:13.440><c> this</c><00:23:13.740><c> is</c><00:23:13.860><c> what</c><00:23:13.980><c> I'm</c>
+the existing one and this is what I'm
+the existing one and this is what I'm
+going<00:23:14.400><c> to</c><00:23:14.520><c> do</c><00:23:14.640><c> I'm</c><00:23:14.880><c> going</c><00:23:15.059><c> to</c><00:23:15.240><c> use</c><00:23:15.480><c> a</c><00:23:16.020><c> workflow</c>
+going to do I'm going to use a workflow
+going to do I'm going to use a workflow
+that<00:23:16.679><c> I</c><00:23:16.919><c> have</c><00:23:17.100><c> so</c><00:23:17.700><c> I</c><00:23:18.000><c> will</c><00:23:18.179><c> save</c>
+if<00:23:21.600><c> I</c><00:23:21.720><c> go</c><00:23:21.900><c> to</c><00:23:22.080><c> the</c><00:23:22.320><c> GitHub</c><00:23:22.620><c> actions</c>
+if I go to the GitHub actions
+if I go to the GitHub actions
+you'll<00:23:24.480><c> see</c><00:23:24.600><c> it</c><00:23:24.960><c> failed</c><00:23:25.640><c> and</c><00:23:26.640><c> the</c><00:23:26.940><c> reason</c><00:23:27.059><c> for</c>
+you'll see it failed and the reason for
+you'll see it failed and the reason for
+that
+that
+that
+is<00:23:29.820><c> that</c><00:23:30.000><c> probably</c><00:23:30.240><c> I</c><00:23:30.600><c> bought</c><00:23:30.780><c> the</c><00:23:31.020><c> wrong</c>
+is that probably I bought the wrong
+is that probably I bought the wrong
+credentials<00:23:31.980><c> for</c><00:23:32.220><c> love</c><00:23:32.400><c> Renova</c><00:23:33.120><c> so</c><00:23:33.539><c> I</c><00:23:33.900><c> will</c>
+credentials for love Renova so I will
+credentials for love Renova so I will
+fix<00:23:34.559><c> that</c>
+now<00:23:45.059><c> there's</c><00:23:45.299><c> something</c><00:23:45.539><c> wrong</c><00:23:45.780><c> with</c><00:23:46.080><c> upload</c>
+now there's something wrong with upload
+now there's something wrong with upload
+I<00:23:47.400><c> believe</c><00:23:47.760><c> I</c><00:23:48.000><c> made</c><00:23:48.179><c> a</c><00:23:48.360><c> mistake</c><00:23:48.600><c> here</c><00:23:48.780><c> it</c>
+I believe I made a mistake here it
+I believe I made a mistake here it
+shouldn't<00:23:49.799><c> take</c>
+shouldn't take
+shouldn't take
+all<00:23:51.059><c> of</c><00:23:51.240><c> the</c><00:23:51.360><c> files</c><00:23:51.659><c> here</c><00:23:51.780><c> it's</c><00:23:51.960><c> uploaded</c><00:23:52.440><c> the</c>
+all of the files here it's uploaded the
+all of the files here it's uploaded the
+release<00:23:53.280><c> successfully</c><00:23:54.059><c> but</c><00:23:54.780><c> it's</c><00:23:55.020><c> uploading</c>
+release successfully but it's uploading
+release successfully but it's uploading
+each<00:23:55.740><c> file</c><00:23:56.299><c> there</c><00:23:57.299><c> is</c><00:23:57.480><c> over</c><00:23:57.900><c> 13</c><00:23:58.799><c> 000</c><00:23:58.919><c> to</c><00:23:59.100><c> be</c>
+each file there is over 13 000 to be
+each file there is over 13 000 to be
+uploaded<00:23:59.580><c> so</c><00:23:59.760><c> this</c><00:23:59.880><c> is</c><00:24:00.000><c> so</c><00:24:00.240><c> there</c><00:24:00.419><c> is</c>
+uploaded so this is so there is
+uploaded so this is so there is
+something<00:24:00.720><c> wrong</c><00:24:00.960><c> here</c><00:24:01.140><c> let's</c><00:24:01.620><c> figure</c><00:24:02.159><c> it</c><00:24:02.460><c> out</c>
+something wrong here let's figure it out
+something wrong here let's figure it out
+yeah<00:24:03.360><c> here</c><00:24:03.720><c> I</c><00:24:04.080><c> missed</c><00:24:04.559><c> this</c><00:24:04.919><c> so</c><00:24:05.280><c> here</c><00:24:05.640><c> I</c><00:24:05.820><c> need</c>
+yeah here I missed this so here I need
+yeah here I missed this so here I need
+just<00:24:06.240><c> to</c><00:24:06.600><c> say</c><00:24:06.900><c> release.zip</c>
+just to say release.zip
+just to say release.zip
+so<00:24:09.360><c> I</c><00:24:09.600><c> will</c><00:24:09.659><c> cancel</c><00:24:09.840><c> this</c><00:24:10.200><c> workflow</c>
+we<00:24:15.360><c> will</c><00:24:15.480><c> push</c><00:24:15.720><c> another</c><00:24:15.900><c> one</c>
+go<00:24:22.320><c> back</c><00:24:22.620><c> to</c><00:24:22.799><c> actions</c>
+go back to actions
+go back to actions
+so<00:24:24.780><c> now</c><00:24:24.960><c> you</c><00:24:25.080><c> can</c><00:24:25.200><c> see</c><00:24:25.380><c> there</c><00:24:25.679><c> is</c><00:24:25.860><c> there</c><00:24:26.280><c> is</c>
+so now you can see there is there is
+so now you can see there is there is
+only<00:24:26.640><c> one</c><00:24:26.940><c> file</c><00:24:27.120><c> to</c><00:24:27.360><c> be</c><00:24:27.419><c> uploaded</c><00:24:27.900><c> and</c><00:24:28.500><c> the</c>
+only one file to be uploaded and the
+only one file to be uploaded and the
+build<00:24:28.980><c> is</c><00:24:29.280><c> successful</c><00:24:29.940><c> now</c><00:24:30.360><c> it's</c><00:24:30.659><c> the</c><00:24:31.440><c> deploy</c>
+build is successful now it's the deploy
+build is successful now it's the deploy
+so<00:24:33.059><c> it</c><00:24:33.179><c> is</c><00:24:33.360><c> completed</c><00:24:33.780><c> now</c><00:24:34.020><c> under</c><00:24:34.380><c> five</c>
+so it is completed now under five
+so it is completed now under five
+minutes<00:24:35.360><c> and</c><00:24:36.360><c> if</c><00:24:36.900><c> I</c><00:24:37.080><c> visit</c><00:24:37.260><c> this</c><00:24:37.799><c> link</c><00:24:38.159><c> it</c><00:24:38.820><c> will</c>
+minutes and if I visit this link it will
+minutes and if I visit this link it will
+be
+be
+be
+um<00:24:40.140><c> of</c><00:24:40.500><c> course</c><00:24:40.620><c> it</c><00:24:40.919><c> will</c><00:24:41.039><c> not</c><00:24:41.220><c> work</c><00:24:41.460><c> still</c>
+um of course it will not work still
+um of course it will not work still
+so<00:24:43.919><c> I</c><00:24:44.220><c> will</c><00:24:44.340><c> just</c><00:24:44.580><c> go</c><00:24:44.820><c> back</c>
+so I will just go back
+so I will just go back
+to<00:24:46.860><c> my</c><00:24:47.100><c> browser</c><00:24:47.520><c> if</c><00:24:47.820><c> I</c><00:24:48.000><c> do</c><00:24:48.179><c> this</c><00:24:48.360><c> it</c><00:24:48.539><c> will</c><00:24:48.720><c> be</c>
+to my browser if I do this it will be
+to my browser if I do this it will be
+it's<00:24:49.380><c> not</c><00:24:49.740><c> going</c><00:24:49.919><c> to</c><00:24:50.039><c> be</c><00:24:50.220><c> working</c><00:24:50.340><c> now</c>
+it's not going to be working now
+it's not going to be working now
+one<00:24:52.919><c> thing</c><00:24:53.100><c> that</c><00:24:53.580><c> is</c><00:24:53.700><c> still</c><00:24:53.940><c> remaining</c><00:24:54.299><c> here</c><00:24:54.419><c> I</c>
+one thing that is still remaining here I
+one thing that is still remaining here I
+will<00:24:54.720><c> refresh</c><00:24:55.140><c> this</c><00:24:55.400><c> console</c><00:24:56.400><c> page</c><00:24:56.700><c> and</c>
+will refresh this console page and
+will refresh this console page and
+I<00:24:59.100><c> will</c><00:24:59.220><c> CD</c><00:24:59.640><c> into</c><00:25:00.000><c> our</c><00:25:00.299><c> application</c>
+I will CD into our application
+I will CD into our application
+installation<00:25:01.559><c> directory</c>
+so<00:25:09.780><c> our</c><00:25:10.620><c> files</c><00:25:11.100><c> are</c><00:25:11.220><c> here</c><00:25:11.400><c> so</c><00:25:11.700><c> list</c><00:25:12.000><c> them</c><00:25:12.240><c> you</c>
+so our files are here so list them you
+so our files are here so list them you
+can<00:25:12.780><c> see</c><00:25:13.080><c> files</c><00:25:13.679><c> are</c><00:25:13.799><c> here</c>
+can see files are here
+can see files are here
+now<00:25:15.960><c> one</c><00:25:16.320><c> thing</c><00:25:16.500><c> that</c><00:25:16.679><c> is</c><00:25:16.980><c> still</c><00:25:17.280><c> we</c><00:25:18.179><c> haven't</c>
+now one thing that is still we haven't
+now one thing that is still we haven't
+done<00:25:18.720><c> is</c><00:25:19.140><c> the</c><00:25:19.980><c> key</c><00:25:21.299><c> of</c><00:25:21.900><c> the</c><00:25:22.080><c> app</c><00:25:22.320><c> so</c><00:25:22.980><c> to</c><00:25:23.400><c> do</c><00:25:23.520><c> that</c>
+we're<00:25:28.080><c> on</c><00:25:28.320><c> BHP</c><00:25:28.740><c> Artisan</c><00:25:29.340><c> key</c><00:25:29.580><c> generate</c>
+we're on BHP Artisan key generate
+we're on BHP Artisan key generate
+dash<00:25:31.919><c> dash</c><00:25:32.279><c> show</c>
+and<00:25:35.880><c> here</c><00:25:36.120><c> I'm</c><00:25:36.299><c> going</c><00:25:36.600><c> to</c><00:25:36.900><c> get</c><00:25:37.140><c> my</c><00:25:37.500><c> key</c>
+copy<00:25:40.559><c> it</c>
+copy it
+copy it
+back<00:25:42.059><c> to</c><00:25:42.299><c> our</c>
+back to our
+back to our
+configuration<00:25:44.760><c> settings</c><00:25:45.240><c> on</c><00:25:45.779><c> the</c><00:25:45.960><c> web</c><00:25:46.020><c> app</c>
+the<00:25:51.120><c> app</c><00:25:51.240><c> key</c><00:25:51.919><c> needs</c><00:25:52.919><c> instead</c><00:25:53.340><c> of</c><00:25:53.460><c> being</c><00:25:53.659><c> to</c><00:25:54.659><c> do</c>
+the app key needs instead of being to do
+the app key needs instead of being to do
+I<00:25:55.260><c> will</c><00:25:55.380><c> replace</c><00:25:55.500><c> it</c><00:25:55.799><c> with</c><00:25:56.039><c> the</c><00:25:56.340><c> key</c><00:25:56.520><c> itself</c>
+I will replace it with the key itself
+I will replace it with the key itself
+that<00:25:57.419><c> we</c><00:25:57.600><c> just</c><00:25:57.900><c> got</c><00:25:58.620><c> and</c><00:25:59.279><c> Save</c>
+that we just got and Save
+that we just got and Save
+another<00:26:01.320><c> thing</c><00:26:01.679><c> is</c><00:26:01.919><c> the</c><00:26:02.159><c> app</c><00:26:02.340><c> URL</c><00:26:02.820><c> I</c><00:26:03.360><c> believe</c><00:26:03.480><c> I</c>
+another thing is the app URL I believe I
+another thing is the app URL I believe I
+have<00:26:03.960><c> it</c>
+have it
+have it
+paste<00:26:06.360><c> this</c><00:26:06.539><c> one</c>
+I<00:26:09.419><c> will</c><00:26:09.600><c> save</c>
+I will save
+I will save
+so<00:26:11.580><c> if</c><00:26:11.640><c> it's</c><00:26:11.820><c> not</c><00:26:12.059><c> working</c><00:26:12.299><c> let's</c><00:26:12.960><c> try</c><00:26:13.679><c> the</c>
+so if it's not working let's try the
+so if it's not working let's try the
+startup<00:26:14.760><c> command</c><00:26:15.120><c> itself</c><00:26:15.480><c> one</c>
+startup command itself one
+startup command itself one
+as<00:26:18.120><c> you</c><00:26:18.240><c> can</c><00:26:18.360><c> see</c><00:26:18.480><c> here</c><00:26:18.720><c> the</c><00:26:18.960><c> connection</c><00:26:19.140><c> is</c>
+as you can see here the connection is
+as you can see here the connection is
+using<00:26:19.860><c> insecure</c><00:26:20.580><c> transport</c><00:26:21.059><c> uh</c>
+using insecure transport uh
+using insecure transport uh
+this<00:26:22.980><c> is</c><00:26:23.100><c> basically</c><00:26:23.400><c> because</c><00:26:23.640><c> I</c><00:26:23.940><c> forgot</c><00:26:24.360><c> to</c>
+this is basically because I forgot to
+this is basically because I forgot to
+add<00:26:25.200><c> the</c><00:26:25.740><c> remember</c><00:26:26.460><c> that</c><00:26:26.940><c> Baltimore</c><00:26:27.440><c> Bim</c><00:26:28.440><c> file</c>
+add the remember that Baltimore Bim file
+add the remember that Baltimore Bim file
+I<00:26:29.640><c> forgot</c><00:26:30.000><c> it</c><00:26:30.179><c> I</c><00:26:30.779><c> forgot</c><00:26:31.020><c> to</c><00:26:31.140><c> add</c><00:26:31.320><c> it</c><00:26:31.500><c> to</c><00:26:31.620><c> the</c>
+I forgot it I forgot to add it to the
+I forgot it I forgot to add it to the
+environment<00:26:32.279><c> file</c><00:26:32.640><c> so</c><00:26:33.240><c> let's</c><00:26:33.480><c> do</c><00:26:33.720><c> that</c>
+environment file so let's do that
+environment file so let's do that
+so<00:26:34.980><c> I'll</c><00:26:35.159><c> include</c><00:26:35.520><c> the</c><00:26:35.700><c> new</c><00:26:35.940><c> app</c>
+so I'll include the new app
+so I'll include the new app
+so<00:26:39.179><c> we'll</c><00:26:39.299><c> add</c><00:26:39.480><c> a</c><00:26:39.659><c> new</c><00:26:39.779><c> application</c><00:26:40.200><c> setting</c>
+so we'll add a new application setting
+so we'll add a new application setting
+it's
+it's
+it's
+in<00:26:42.960><c> database</c><00:26:43.620><c> config</c><00:26:44.400><c> it's</c><00:26:44.880><c> this</c><00:26:45.299><c> one</c>
+paste<00:26:49.740><c> and</c><00:26:50.100><c> here</c><00:26:50.279><c> you</c><00:26:50.520><c> need</c><00:26:50.640><c> to</c><00:26:50.760><c> add</c><00:26:50.940><c> the</c><00:26:51.179><c> path</c>
+paste and here you need to add the path
+paste and here you need to add the path
+so<00:26:51.779><c> it's</c><00:26:52.020><c> slash</c><00:26:52.380><c> home</c><00:26:52.620><c> slash</c><00:26:53.220><c> size</c><00:26:53.460><c> WWE</c>
+so it's slash home slash size WWE
+so it's slash home slash size WWE
+root
+root
+root
+slash
+slash
+slash
+and
+and
+and
+I'll<00:27:01.440><c> copy</c><00:27:01.860><c> name</c><00:27:02.039><c> from</c><00:27:02.400><c> here</c>
+I'll copy name from here
+I'll copy name from here
+it's<00:27:04.200><c> going</c><00:27:04.559><c> to</c><00:27:04.740><c> be</c><00:27:04.919><c> the</c><00:27:05.100><c> same</c><00:27:05.279><c> name</c>
+paste<00:27:09.120><c> and</c>
+paste and
+paste and
+save
+so<00:27:15.480><c> again</c><00:27:15.659><c> this</c><00:27:15.900><c> is</c><00:27:16.080><c> going</c><00:27:16.260><c> to</c><00:27:16.440><c> restart</c><00:27:16.679><c> the</c>
+so again this is going to restart the
+so again this is going to restart the
+server
+so<00:27:19.799><c> it's</c><00:27:19.919><c> still</c><00:27:20.100><c> not</c><00:27:20.279><c> working</c><00:27:20.520><c> let's</c><00:27:21.179><c> check</c>
+so it's still not working let's check
+so it's still not working let's check
+again<00:27:21.960><c> the</c><00:27:22.320><c> startup</c>
+I<00:27:27.480><c> believe</c><00:27:27.600><c> we</c><00:27:27.840><c> have</c><00:27:27.960><c> something</c><00:27:28.200><c> wrong</c><00:27:28.440><c> with</c>
+I believe we have something wrong with
+I believe we have something wrong with
+my<00:27:29.159><c> startup</c><00:27:29.640><c> file</c>
+my startup file
+my startup file
+sorry
+yeah<00:27:35.100><c> this</c><00:27:35.820><c> one</c>
+sorry<00:27:39.240><c> about</c><00:27:39.480><c> that</c>
+sorry about that
+sorry about that
+and<00:27:42.419><c> it</c><00:27:42.720><c> should</c><00:27:42.779><c> be</c><00:27:42.900><c> default</c><00:27:43.260><c> because</c><00:27:43.440><c> I</c>
+and it should be default because I
+and it should be default because I
+remember<00:27:43.860><c> I</c><00:27:44.159><c> named</c><00:27:44.520><c> it</c><00:27:44.700><c> default</c><00:27:45.659><c> not</c><00:27:45.840><c> engine</c><00:27:46.140><c> X</c>
+remember I named it default not engine X
+remember I named it default not engine X
+default<00:27:46.919><c> so</c><00:27:47.720><c> I</c><00:27:48.720><c> was</c><00:27:48.840><c> telling</c><00:27:49.140><c> you</c><00:27:49.200><c> to</c><00:27:49.440><c> be</c>
+default so I was telling you to be
+default so I was telling you to be
+careful
+careful
+careful
+with<00:27:51.299><c> the</c><00:27:51.539><c> names</c><00:27:51.919><c> I</c><00:27:52.919><c> filling</c><00:27:53.760><c> that</c><00:27:53.880><c> up</c>
+with the names I filling that up
+with the names I filling that up
+okay<00:27:56.700><c> so</c><00:27:57.240><c> our</c><00:27:57.659><c> startup</c><00:27:58.200><c> server</c><00:27:58.559><c> manually</c>
+okay so our startup server manually
+okay so our startup server manually
+from<00:27:59.940><c> here</c><00:28:00.120><c> just</c><00:28:00.480><c> to</c><00:28:00.659><c> start</c>
+from here just to start
+from here just to start
+so<00:28:02.279><c> we'll</c><00:28:02.460><c> try</c><00:28:02.640><c> again</c><00:28:02.760><c> the</c><00:28:03.059><c> startup</c><00:28:03.419><c> command</c>
+so we'll try again the startup command
+so we'll try again the startup command
+let's<00:28:03.960><c> see</c><00:28:04.260><c> also</c><00:28:04.919><c> did</c><00:28:05.159><c> I</c><00:28:05.340><c> miss</c><00:28:05.520><c> anything</c><00:28:05.640><c> else</c>
+let's see also did I miss anything else
+let's see also did I miss anything else
+okay<00:28:07.200><c> it's</c><00:28:07.440><c> another</c><00:28:07.679><c> mistake</c><00:28:08.220><c> that</c><00:28:08.460><c> I</c><00:28:08.640><c> did</c>
+okay it's another mistake that I did
+okay it's another mistake that I did
+here<00:28:10.020><c> if</c><00:28:10.620><c> you</c><00:28:10.860><c> notice</c><00:28:11.340><c> it's</c><00:28:12.059><c> in</c><00:28:12.299><c> the</c><00:28:12.480><c> migrate</c>
+here if you notice it's in the migrate
+here if you notice it's in the migrate
+I<00:28:14.760><c> said</c><00:28:14.940><c> see</c><00:28:15.600><c> it</c><00:28:15.779><c> but</c><00:28:16.020><c> the</c><00:28:16.799><c> first</c><00:28:16.919><c> time</c><00:28:17.100><c> it</c><00:28:17.279><c> was</c>
+I said see it but the first time it was
+I said see it but the first time it was
+already<00:28:17.580><c> seated</c><00:28:18.059><c> so</c><00:28:18.419><c> the</c><00:28:18.659><c> the</c><00:28:18.960><c> second</c><00:28:19.140><c> time</c>
+already seated so the the second time
+already seated so the the second time
+it's<00:28:19.980><c> adding</c><00:28:20.640><c> the</c><00:28:20.820><c> same</c><00:28:20.940><c> username</c><00:28:21.480><c> and</c>
+it's adding the same username and
+it's adding the same username and
+email<00:28:23.279><c> Etc</c><00:28:23.460><c> so</c><00:28:23.880><c> it's</c><00:28:24.299><c> breaking</c><00:28:24.840><c> there</c><00:28:25.080><c> it's</c>
+email Etc so it's breaking there it's
+email Etc so it's breaking there it's
+insert
+insert
+insert
+fresh
+so<00:28:31.919><c> we</c><00:28:32.039><c> restart</c><00:28:32.279><c> again</c>
+so we restart again
+so we restart again
+let's<00:28:34.080><c> try</c><00:28:34.440><c> again</c><00:28:34.620><c> the</c><00:28:34.860><c> startup</c>
+let's try again the startup
+let's try again the startup
+from<00:28:37.080><c> the</c><00:28:37.260><c> terminal</c>
+so<00:28:48.419><c> behind</c><00:28:48.779><c> the</c><00:28:48.900><c> scene</c><00:28:49.080><c> I</c><00:28:49.440><c> allowed</c>
+so behind the scene I allowed
+so behind the scene I allowed
+the<00:28:51.659><c> release</c><00:28:51.779><c> info</c><00:28:52.320><c> change</c>
+the release info change
+the release info change
+um<00:28:53.700><c> that's</c><00:28:54.600><c> something</c><00:28:54.900><c> you</c><00:28:55.140><c> don't</c><00:28:55.320><c> have</c><00:28:55.440><c> to</c>
+um that's something you don't have to
+um that's something you don't have to
+worry<00:28:55.679><c> about</c>
+so<00:29:00.059><c> I</c><00:29:00.779><c> will</c><00:29:00.960><c> start</c><00:29:01.620><c> it</c><00:29:01.860><c> up</c><00:29:02.039><c> again</c><00:29:02.279><c> let's</c><00:29:03.059><c> see</c>
+yeah<00:29:07.260><c> now</c><00:29:07.559><c> it's</c><00:29:07.740><c> working</c>
+now<00:29:13.500><c> this</c><00:29:13.740><c> is</c><00:29:13.919><c> finished</c><00:29:14.159><c> let's</c><00:29:15.000><c> see</c><00:29:15.360><c> I</c><00:29:15.720><c> believe</c>
+now this is finished let's see I believe
+now this is finished let's see I believe
+we<00:29:16.140><c> have</c><00:29:16.380><c> of</c><00:29:16.799><c> course</c><00:29:16.919><c> some</c><00:29:17.460><c> errors</c><00:29:18.059><c> but</c><00:29:18.539><c> it's</c><00:29:19.020><c> a</c>
+we have of course some errors but it's a
+we have of course some errors but it's a
+mixed<00:29:19.620><c> content</c>
+mixed content
+mixed content
+now<00:29:21.960><c> these</c><00:29:22.320><c> errors</c><00:29:22.679><c> to</c><00:29:22.860><c> solve</c><00:29:23.220><c> them</c><00:29:23.340><c> because</c>
+now these errors to solve them because
+now these errors to solve them because
+because<00:29:24.059><c> it's</c><00:29:24.480><c> coming</c><00:29:24.720><c> from</c><00:29:25.020><c> HTTP</c><00:29:25.679><c> we</c><00:29:26.279><c> have</c><00:29:26.399><c> to</c>
+because it's coming from HTTP we have to
+because it's coming from HTTP we have to
+solve<00:29:26.880><c> this</c><00:29:27.120><c> by</c><00:29:27.659><c> changing</c><00:29:28.559><c> our</c><00:29:28.740><c> code</c><00:29:28.980><c> a</c><00:29:29.220><c> little</c>
+solve this by changing our code a little
+solve this by changing our code a little
+bit<00:29:29.520><c> so</c><00:29:30.240><c> in</c><00:29:30.419><c> the</c><00:29:30.600><c> trust</c><00:29:30.899><c> boxes</c>
+this<00:29:34.799><c> should</c><00:29:35.039><c> be</c><00:29:35.279><c> star</c><00:29:35.940><c> all</c>
+and<00:29:40.380><c> in</c><00:29:40.620><c> the</c><00:29:40.860><c> app</c><00:29:41.100><c> service</c><00:29:42.000><c> provider</c>
+and in the app service provider
+and in the app service provider
+in<00:29:44.039><c> the</c><00:29:44.220><c> boot</c><00:29:44.520><c> method</c>
+would<00:29:47.820><c> force</c><00:29:48.240><c> it</c><00:29:48.419><c> to</c><00:29:48.960><c> uh</c>
+would force it to uh
+would force it to uh
+you<00:29:51.240><c> will</c><00:29:51.419><c> force</c><00:29:51.659><c> it</c><00:29:51.779><c> to</c><00:29:51.960><c> be</c><00:29:52.080><c> on</c><00:29:52.320><c> production</c>
+to<00:29:55.559><c> use</c><00:29:55.740><c> the</c><00:29:55.919><c> URL</c><00:29:56.399><c> uh</c><00:29:57.240><c> first</c><00:29:57.539><c> scheme</c><00:29:58.260><c> https</c>
+so<00:30:08.700><c> it</c><00:30:08.820><c> finished</c><00:30:09.000><c> in</c><00:30:09.240><c> two</c><00:30:09.480><c> minutes</c>
+so it finished in two minutes
+so it finished in two minutes
+now<00:30:10.860><c> let's</c><00:30:11.100><c> check</c><00:30:11.399><c> our</c>
+now let's check our
+now let's check our
+website
+website
+website
+let's<00:30:14.580><c> give</c><00:30:14.820><c> it</c><00:30:15.000><c> some</c><00:30:15.179><c> time</c><00:30:15.360><c> until</c><00:30:15.600><c> it's</c>
+let's give it some time until it's
+let's give it some time until it's
+finishing
+finishing
+finishing
+now<00:30:17.820><c> let's</c><00:30:18.000><c> refresh</c>
+now let's refresh
+now let's refresh
+now<00:30:20.580><c> as</c><00:30:20.820><c> you</c><00:30:20.940><c> can</c><00:30:21.059><c> see</c><00:30:21.179><c> it's</c><00:30:21.600><c> working</c><00:30:21.899><c> however</c>
+now as you can see it's working however
+now as you can see it's working however
+the<00:30:24.179><c> images</c><00:30:24.360><c> are</c><00:30:24.779><c> not</c><00:30:24.899><c> coming</c><00:30:25.080><c> and</c><00:30:25.380><c> that's</c>
+the images are not coming and that's
+the images are not coming and that's
+because<00:30:25.860><c> I</c><00:30:26.340><c> missed</c><00:30:26.760><c> one</c><00:30:27.240><c> step</c>
+because I missed one step
+because I missed one step
+in<00:30:29.159><c> the</c><00:30:29.340><c> configuration</c><00:30:29.820><c> because</c><00:30:30.240><c> I</c><00:30:30.899><c> used</c><00:30:31.080><c> to</c>
+in the configuration because I used to
+in the configuration because I used to
+use<00:30:31.919><c> the</c><00:30:32.720><c> AWS</c><00:30:34.100><c> S3</c><00:30:35.240><c> storage</c><00:30:36.240><c> here</c><00:30:36.840><c> you</c><00:30:37.080><c> can</c><00:30:37.200><c> use</c>
+use the AWS S3 storage here you can use
+use the AWS S3 storage here you can use
+the<00:30:37.620><c> blob</c><00:30:37.919><c> storage</c><00:30:38.159><c> if</c><00:30:38.460><c> you</c><00:30:38.580><c> want</c><00:30:38.700><c> but</c>
+the blob storage if you want but
+the blob storage if you want but
+currently<00:30:39.659><c> I'm</c><00:30:39.899><c> referring</c><00:30:40.440><c> it</c><00:30:40.559><c> as</c><00:30:40.919><c> locally</c><00:30:41.520><c> so</c>
+currently I'm referring it as locally so
+currently I'm referring it as locally so
+only<00:30:43.020><c> one</c><00:30:43.260><c> thing</c><00:30:43.440><c> that</c><00:30:43.679><c> we</c><00:30:43.799><c> can</c><00:30:43.980><c> do</c><00:30:44.159><c> from</c><00:30:44.399><c> here</c>
+only one thing that we can do from here
+only one thing that we can do from here
+if<00:30:45.120><c> I</c><00:30:45.299><c> go</c><00:30:45.419><c> to</c><00:30:45.600><c> the</c><00:30:45.899><c> console</c><00:30:46.500><c> again</c>
+and<00:30:50.880><c> to</c><00:30:51.059><c> the</c><00:30:51.240><c> root</c><00:30:51.559><c> then</c><00:30:52.559><c> we</c><00:30:53.039><c> can</c><00:30:53.159><c> do</c><00:30:53.399><c> the</c>
+and to the root then we can do the
+and to the root then we can do the
+something<00:30:53.940><c> like</c><00:30:54.240><c> this</c><00:30:54.419><c> PHP</c><00:30:55.020><c> artist</c>
+something like this PHP artist
+something like this PHP artist
+storage<00:30:57.299><c> link</c>
+so<00:31:02.460><c> as</c><00:31:02.640><c> you</c><00:31:02.760><c> can</c><00:31:02.820><c> see</c><00:31:02.940><c> all</c><00:31:03.179><c> the</c><00:31:03.360><c> images</c><00:31:03.480><c> are</c>
+so as you can see all the images are
+so as you can see all the images are
+coming
+coming
+coming
+and<00:31:05.220><c> this</c><00:31:05.399><c> tip</c><00:31:05.640><c> we</c><00:31:05.880><c> can</c><00:31:06.059><c> add</c><00:31:06.299><c> it</c><00:31:06.480><c> to</c><00:31:06.659><c> the</c>
+and this tip we can add it to the
+and this tip we can add it to the
+startup<00:31:08.460><c> command</c>
+startup command
+startup command
+s home<00:31:10.260><c> slash</c><00:31:10.679><c> startup</c>
+s home slash startup
+s home slash startup
+and<00:31:12.840><c> somewhere</c><00:31:13.200><c> here</c><00:31:13.380><c> we</c><00:31:13.679><c> add</c>
+and<00:31:18.000><c> because</c><00:31:18.179><c> I</c><00:31:18.419><c> already</c><00:31:18.539><c> have</c><00:31:18.779><c> my</c><00:31:18.960><c> database</c>
+and because I already have my database
+and because I already have my database
+now<00:31:19.620><c> already</c><00:31:19.799><c> I</c><00:31:20.520><c> don't</c><00:31:20.580><c> need</c><00:31:20.940><c> to</c>
+now already I don't need to
+now already I don't need to
+have<00:31:22.620><c> the</c><00:31:22.860><c> migrate</c><00:31:23.159><c> fresh</c><00:31:23.460><c> seed</c><00:31:23.880><c> I</c><00:31:24.120><c> just</c><00:31:24.299><c> need</c>
+have the migrate fresh seed I just need
+have the migrate fresh seed I just need
+just<00:31:24.899><c> migrate</c><00:31:25.320><c> in</c><00:31:25.740><c> case</c><00:31:25.919><c> if</c><00:31:26.100><c> there's</c><00:31:26.340><c> any</c><00:31:26.700><c> new</c>
+just migrate in case if there's any new
+just migrate in case if there's any new
+migrations
+migrations
+migrations
+so<00:31:29.580><c> once</c><00:31:30.059><c> this</c><00:31:30.240><c> is</c><00:31:30.360><c> done</c>
+I<00:31:35.460><c> think</c><00:31:35.580><c> yeah</c><00:31:36.059><c> that's</c><00:31:36.299><c> it</c>
+I think yeah that's it
+I think yeah that's it
+um
+um
+um
+I<00:31:39.000><c> have</c><00:31:39.260><c> my</c><00:31:40.260><c> application</c><00:31:40.799><c> ready</c><00:31:41.100><c> so</c><00:31:41.940><c> I</c><00:31:42.120><c> have</c><00:31:42.299><c> my</c>
+I have my application ready so I have my
+I have my application ready so I have my
+application<00:31:42.840><c> ready</c><00:31:43.220><c> it's</c><00:31:44.220><c> working</c>
+application ready it's working
+application ready it's working
+as<00:31:46.320><c> expected</c>
+if<00:31:49.320><c> you</c><00:31:49.440><c> have</c><00:31:49.559><c> worked</c><00:31:49.860><c> with</c><00:31:49.980><c> Azure</c><00:31:50.460><c> before</c><00:31:50.700><c> and</c>
+if you have worked with Azure before and
+if you have worked with Azure before and
+if<00:31:52.020><c> you</c><00:31:52.140><c> have</c><00:31:52.320><c> any</c><00:31:52.559><c> comments</c><00:31:53.159><c> or</c><00:31:53.720><c> challenges</c>
+if you have any comments or challenges
+if you have any comments or challenges
+please<00:31:55.080><c> share</c><00:31:55.380><c> in</c><00:31:55.559><c> the</c><00:31:55.679><c> comments</c>
+please share in the comments
+please share in the comments
+have<00:31:57.000><c> a</c><00:31:57.179><c> good</c><00:31:57.299><c> day</c><00:31:57.419><c> see</c><00:31:57.899><c> you</c><00:31:58.020><c> in</c><00:31:58.140><c> the</c><00:31:58.260><c> next</c><00:31:58.380><c> one</c>
