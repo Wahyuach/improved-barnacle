@@ -205,7 +205,7 @@
             </button>
             <button
                 type="button"
-                wire:click="closeModal"
+                wire:click="$dispatch('close-form')"
                 class="flex-1 bg-gray-300 hover:bg-gray-400 dark:bg-slate-600 dark:hover:bg-slate-500 text-gray-900 dark:text-white font-semibold py-3 px-4 rounded-lg transition duration-200 flex items-center justify-center gap-2"
             >
                 <span>❌</span>
@@ -214,11 +214,3 @@
         </div>
     </form>
 </div>
-
-@script
-<script>
-    Livewire.on('close-modal', () => {
-        // Modal akan ditutup oleh parent component
-    });
-</script>
-@endscript

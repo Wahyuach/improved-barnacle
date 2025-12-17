@@ -8,6 +8,7 @@ use App\Models\StockMovement;
 use Livewire\Component;
 use Livewire\WithPagination;
 use Livewire\Attributes\Computed;
+use Livewire\Attributes\On;
 
 class InventoryDashboard extends Component
 {
@@ -21,6 +22,10 @@ class InventoryDashboard extends Component
     public $editingProductId = null;
     // key to force child ProductForm to remount when opening add/edit
     public $productFormKey = null;
+    
+    // Notification properties
+    public $notification = '';
+    public $showNotification = false;
 
     #[Computed]
     public function editingProduct()
@@ -105,6 +110,21 @@ class InventoryDashboard extends Component
         $this->showProductForm = false;
         $this->editingProductId = null;
         $this->productFormKey = null;
+    }
+
+    #[On('product-saved')]
+    public function handleProductSaved($message)
+    {
+        $this->notification = $message;
+        $this->showNotification = true;
+        $this->closeForm();
+    }
+
+    #[On('product-deleted')]
+    public function handleProductDeleted()
+    {
+        $this->notification = 'Produk berhasil dihapus!';
+        $this->showNotification = true;
     }
 
     public function deleteProduct($productId)

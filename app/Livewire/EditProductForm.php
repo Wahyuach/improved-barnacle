@@ -56,14 +56,8 @@ class EditProductForm extends Component
             'unit', 'supplier'
         ]));
 
-        $this->dispatch('product-saved')->to(InventoryDashboard::class);
-        $this->closeModal();
-    }
-
-    public function closeModal()
-    {
+        $this->dispatch('product-saved', message: 'Produk berhasil diperbarui!')->to(InventoryDashboard::class);
         $this->reset();
-        $this->dispatch('close-modal');
     }
 
     public function render()
