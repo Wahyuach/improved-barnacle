@@ -19,6 +19,7 @@
                 <flux:navlist.group :heading="__('Inventaris')" class="grid">
                     <flux:navlist.item icon="cube" :href="route('inventory.dashboard')" :current="request()->routeIs('inventory.dashboard')" wire:navigate>{{ __('Inventaris') }}</flux:navlist.item>
                     <flux:navlist.item icon="cube" :href="route('inventory.stock-movements')" :current="request()->routeIs('inventory.stock-movements')" wire:navigate>{{ __('Laporan') }}</flux:navlist.item>
+                    <flux:navlist.item icon="clipboard-document-list" :href="route('inventory.activity-log')" :current="request()->routeIs('inventory.activity-log')" wire:navigate>{{ __('Activity Log') }}</flux:navlist.item>
 
                 </flux:navlist.group>
             </flux:navlist>

@@ -1,10 +1,10 @@
-<div>
-    <flux:main container class="py-8 space-y-6">
-        <flux:heading size="xl" level="1">📊 Laporan Pergerakan Stok</flux:heading>
-
-        <div class="space-y-6">
-                <!-- Filters -->
-                <div class="bg-white dark:bg-slate-800 rounded-lg shadow p-6 mb-6">
+<div class="flex h-full w-full flex-1 flex-col gap-6">
+    <div>
+        <h1 class="text-3xl font-bold text-gray-900 dark:text-white mb-2">📊 Laporan Pergerakan Stok</h1>
+        <p class="text-gray-600 dark:text-gray-400">Laporan lengkap pergerakan stok dengan filter dan export PDF</p>
+    </div>
+    <!-- Filters -->
+    <div class="rounded-xl border border-neutral-200 dark:border-neutral-700 bg-white dark:bg-slate-800 shadow p-6">
                     <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
                         <!-- Search -->
                         <div>
@@ -51,8 +51,8 @@
                     </div>
                 </div>
 
-                <!-- Table -->
-                <div class="bg-white dark:bg-slate-800 rounded-lg shadow overflow-hidden">
+    <!-- Table -->
+    <div class="rounded-xl border border-neutral-200 dark:border-neutral-700 bg-white dark:bg-slate-800 shadow overflow-hidden">
                     <div class="overflow-x-auto">
                         <table class="min-w-full divide-y divide-gray-200 dark:divide-gray-700">
                             <thead class="bg-gray-50 dark:bg-slate-700">
@@ -136,6 +136,4 @@
                     </div>
                 </div>
             </div>
-        </div>
-    </flux:main>
 </div>
