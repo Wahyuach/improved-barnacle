@@ -25,6 +25,9 @@ class StockMovementForm extends Component
     #[Validate('nullable|string|max:500')]
     public $notes = '';
 
+    #[Validate('nullable|string|max:100')]
+    public $supplier = '';
+
     public function mount(Product $product)
     {
         $this->product = $product;
@@ -53,13 +56,15 @@ class StockMovementForm extends Component
             'quantity' => $this->quantity,
             'reference' => $this->reference,
             'notes' => $this->notes,
+            'supplier' => $this->supplier,
         ]);
 
-        $this->reset(['quantity', 'reference', 'notes', 'type']);
+        $this->reset(['quantity', 'reference', 'notes', 'type', 'supplier']);
         $this->type = 'in';
         $this->showModal = false;
 
         $this->dispatch('stock-updated');
+        session()->flash('message', 'Stok berhasil diperbarui!');
     }
 
     public function render()

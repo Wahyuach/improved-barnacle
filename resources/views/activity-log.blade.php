@@ -70,6 +70,9 @@
                                             @if($activity->reference)
                                                 <span>Ref: {{ $activity->reference }}</span>
                                             @endif
+                                            @if($activity->supplier)
+                                                <span>Supplier: <span class="font-medium text-gray-700 dark:text-gray-300">{{ $activity->supplier }}</span></span>
+                                            @endif
                                         </div>
 
                                         @if($activity->notes)

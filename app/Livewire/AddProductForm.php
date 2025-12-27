@@ -48,7 +48,7 @@ class AddProductForm extends Component
             'unit', 'supplier'
         ]));
 
-        $this->dispatch('product-saved', message: 'Produk berhasil ditambahkan!')->to(InventoryDashboard::class);
+        $this->dispatch('product-saved', message: 'Produk berhasil ditambahkan!');
         $this->reset();
     }
 

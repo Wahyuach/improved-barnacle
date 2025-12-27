@@ -32,6 +32,7 @@ class ActivityLog extends Component
                     $q->where('name', 'like', '%' . $this->search . '%');
                 })
                 ->orWhere('reference', 'like', '%' . $this->search . '%')
+                ->orWhere('supplier', 'like', '%' . $this->search . '%')
                 ->orWhere('notes', 'like', '%' . $this->search . '%');
             })
             ->orderBy('created_at', 'desc')

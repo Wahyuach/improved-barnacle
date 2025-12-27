@@ -60,6 +60,19 @@
                     />
                 </div>
 
+                <!-- Supplier -->
+                <div>
+                    <label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+                        Supplier
+                    </label>
+                    <input
+                        type="text"
+                        wire:model="supplier"
+                        placeholder="Masukkan nama supplier"
+                        class="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-lg dark:bg-slate-700 dark:text-white"
+                    />
+                </div>
+
                 <!-- Catatan -->
                 <div>
                     <label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">

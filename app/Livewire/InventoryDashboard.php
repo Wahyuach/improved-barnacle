@@ -75,6 +75,136 @@ class InventoryDashboard extends Component
             ->sum(fn ($p) => $p->quantity * $p->price);
     }
 
+    #[Computed]
+    public function totalCategories()
+    {
+        return Category::count();
+    }
+
+    #[Computed]
+    public function totalSuppliers()
+    {
+        return Product::where('is_active', true)
+            ->whereNotNull('supplier')
+            ->distinct('supplier')
+            ->count('supplier');
+    }
+
+    #[Computed]
+    public function movementsToday()
+    {
+        return StockMovement::whereDate('created_at', today())->count();
+    }
+
+    #[Computed]
+    public function movementsThisWeek()
+    {
+        return StockMovement::whereBetween('created_at', [now()->startOfWeek(), now()->endOfWeek()])->count();
+    }
+
+    #[Computed]
+    public function productsNeedingReorder()
+    {
+        return Product::whereColumn('quantity', '<=', 'min_quantity')
+            ->where('is_active', true)
+            ->count();
+    }
+
+    #[Computed]
+    public function recentActivities()
+    {
+        return StockMovement::with(['product', 'user'])
+            ->orderBy('created_at', 'desc')
+            ->take(10)
+            ->get();
+    }
+
+    #[Computed]
+    public function topValueProducts()
+    {
+        return Product::where('is_active', true)
+            ->get()
+            ->sortByDesc(fn ($p) => $p->quantity * $p->price)
+            ->take(5);
+    }
+
+    #[Computed]
+    public function fastMovingProducts()
+    {
+        return Product::where('is_active', true)
+            ->withCount(['stockMovements' => function ($query) {
+                $query->where('created_at', '>=', now()->subDays(30));
+            }])
+            ->orderBy('stock_movements_count', 'desc')
+            ->take(5)
+            ->get();
+    }
+
+    #[Computed]
+    public function lowStockAlerts()
+    {
+        return Product::whereColumn('quantity', '<=', 'min_quantity')
+            ->where('is_active', true)
+            ->with('category')
+            ->orderBy('quantity', 'asc')
+            ->take(5)
+            ->get();
+    }
+
+    #[Computed]
+    public function stockByCategory()
+    {
+        return Product::where('is_active', true)
+            ->with('category')
+            ->get()
+            ->groupBy('category_id')
+            ->map(function ($products, $categoryId) {
+                $category = $products->first()->category;
+                return [
+                    'category' => $category->name,
+                    'total_value' => $products->sum(fn ($p) => $p->quantity * $p->price),
+                    'count' => $products->count(),
+                ];
+            })
+            ->sortByDesc('total_value')
+            ->take(6);
+    }
+
+    #[Computed]
+    public function movementsTrend()
+    {
+        $days = [];
+        for ($i = 6; $i >= 0; $i--) {
+            $date = now()->subDays($i);
+            $days[] = [
+                'date' => $date->format('d M'),
+                'in' => StockMovement::whereDate('created_at', $date)
+                    ->whereIn('type', ['in', 'return'])->count(),
+                'out' => StockMovement::whereDate('created_at', $date)
+                    ->whereIn('type', ['out', 'adjustment'])->count(),
+            ];
+        }
+        return $days;
+    }
+
+    #[Computed]
+    public function suppliersList()
+    {
+        return Product::where('is_active', true)
+            ->whereNotNull('supplier')
+            ->get()
+            ->groupBy('supplier')
+            ->map(function ($products, $supplier) {
+                return [
+                    'name' => $supplier,
+                    'product_count' => $products->count(),
+                    'total_value' => $products->sum(fn ($p) => $p->quantity * $p->price),
+                ];
+            })
+            ->sortByDesc('product_count')
+            ->take(5);
+    }
+
     public function updateSort($field)
     {
         if ($this->sortBy === $field) {

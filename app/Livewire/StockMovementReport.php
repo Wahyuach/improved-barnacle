@@ -36,6 +36,7 @@ class StockMovementReport extends Component
                       ->orWhere('sku', 'like', '%' . $this->search . '%');
                 })
                 ->orWhere('reference', 'like', '%' . $this->search . '%')
+                ->orWhere('supplier', 'like', '%' . $this->search . '%')
                 ->orWhere('notes', 'like', '%' . $this->search . '%');
             })
             ->when($this->type, function ($query) {
@@ -64,6 +65,7 @@ class StockMovementReport extends Component
                       ->orWhere('sku', 'like', '%' . $this->search . '%');
                 })
                 ->orWhere('reference', 'like', '%' . $this->search . '%')
+                ->orWhere('supplier', 'like', '%' . $this->search . '%')
                 ->orWhere('notes', 'like', '%' . $this->search . '%');
             })
             ->when($this->type, function ($query) {

@@ -26,9 +26,6 @@ class EditProductForm extends Component
     public $price = '';
 
     #[Validate('required|integer|min:0')]
-    public $quantity = '';
-
-    #[Validate('required|integer|min:0')]
     public $min_quantity = '10';
 
     #[Validate('required|integer|min:0')]
@@ -36,9 +33,6 @@ class EditProductForm extends Component
 
     #[Validate('required|string')]
     public $unit = 'pcs';
-
-    #[Validate('nullable|string')]
-    public $supplier = '';
 
     public function mount(Product $product)
     {
@@ -52,11 +46,11 @@ class EditProductForm extends Component
 
         $this->product->update($this->only([
             'name', 'category_id', 'description',
-            'price', 'quantity', 'min_quantity', 'max_quantity',
-            'unit', 'supplier'
+            'price', 'min_quantity', 'max_quantity',
+            'unit'
         ]));
 
-        $this->dispatch('product-saved', message: 'Produk berhasil diperbarui!')->to(InventoryDashboard::class);
+        $this->dispatch('product-saved', message: 'Produk berhasil diperbarui!');
         $this->reset();
     }
 

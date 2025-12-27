@@ -14,6 +14,7 @@ class StockMovement extends Model
         'quantity',
         'reference',
         'notes',
+        'supplier',
     ];
 
     protected $casts = [

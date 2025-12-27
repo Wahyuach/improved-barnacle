@@ -102,11 +102,12 @@
         <thead>
             <tr>
                 <th style="width: 12%;">Tanggal</th>
-                <th style="width: 20%;">Produk</th>
-                <th style="width: 12%;">Jenis</th>
+                <th style="width: 18%;">Produk</th>
+                <th style="width: 10%;">Jenis</th>
                 <th style="width: 8%;">Jumlah</th>
-                <th style="width: 12%;">Referensi</th>
-                <th style="width: 24%;">Catatan</th>
+                <th style="width: 10%;">Referensi</th>
+                <th style="width: 12%;">Supplier</th>
+                <th style="width: 18%;">Catatan</th>
                 <th style="width: 12%;">User</th>
             </tr>
         </thead>
@@ -131,12 +132,13 @@
                         @if($movement->type === 'in' || $movement->type === 'return')+@else-@endif{{ $movement->quantity }}
                     </td>
                     <td>{{ $movement->reference ?? '-' }}</td>
+                    <td>{{ $movement->supplier ?? '-' }}</td>
                     <td>{{ $movement->notes ?? '-' }}</td>
                     <td>{{ $movement->user->name }}</td>
                 </tr>
             @empty
                 <tr>
-                    <td colspan="7" style="text-align: center; padding: 20px;">
+                    <td colspan="8" style="text-align: center; padding: 20px;">
                         Tidak ada data pergerakan stok
                     </td>
                 </tr>

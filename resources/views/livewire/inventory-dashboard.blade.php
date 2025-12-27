@@ -19,34 +19,48 @@
     @endif
 
     <!-- Header Stats -->
-    <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
-        <div class="bg-white dark:bg-slate-800 rounded-lg p-6 shadow">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+        <div class="bg-white dark:bg-slate-800 rounded-lg p-6 shadow hover:shadow-lg transition">
             <div class="flex items-center justify-between">
                 <div>
                     <p class="text-sm font-medium text-gray-600 dark:text-gray-400">Total Produk</p>
                     <p class="text-3xl font-bold text-gray-900 dark:text-white">{{ $this->totalProducts }}</p>
+                    <p class="text-xs text-gray-500 dark:text-gray-500 mt-1">{{ $this->totalCategories }} Kategori</p>
                 </div>
                 <div class="text-4xl">📦</div>
             </div>
         </div>
 
-        <div class="bg-white dark:bg-slate-800 rounded-lg p-6 shadow">
+        <div class="bg-white dark:bg-slate-800 rounded-lg p-6 shadow hover:shadow-lg transition">
             <div class="flex items-center justify-between">
                 <div>
-                    <p class="text-sm font-medium text-gray-600 dark:text-gray-400">Stok Rendah</p>
-                    <p class="text-3xl font-bold text-red-600">{{ $this->lowStockProducts }}</p>
+                    <p class="text-sm font-medium text-gray-600 dark:text-gray-400">Butuh Reorder</p>
+                    <p class="text-3xl font-bold text-red-600">{{ $this->productsNeedingReorder }}</p>
+                    <p class="text-xs text-gray-500 dark:text-gray-500 mt-1">{{ $this->lowStockProducts }} Stok Rendah</p>
                 </div>
                 <div class="text-4xl">⚠️</div>
             </div>
         </div>
 
-        <div class="bg-white dark:bg-slate-800 rounded-lg p-6 shadow col-span-2">
+        <div class="bg-white dark:bg-slate-800 rounded-lg p-6 shadow hover:shadow-lg transition">
             <div class="flex items-center justify-between">
                 <div>
-                    <p class="text-sm font-medium text-gray-600 dark:text-gray-400">Total Nilai Inventaris</p>
+                    <p class="text-sm font-medium text-gray-600 dark:text-gray-400">Total Nilai</p>
                     <p class="text-3xl font-bold text-green-600">Rp {{ number_format($this->totalValue, 0, ',', '.') }}</p>
+                    <p class="text-xs text-gray-500 dark:text-gray-500 mt-1">Nilai Inventaris</p>
                 </div>
                 <div class="text-4xl">💰</div>
+            </div>
+        </div>
+
+        <div class="bg-white dark:bg-slate-800 rounded-lg p-6 shadow hover:shadow-lg transition">
+            <div class="flex items-center justify-between">
+                <div>
+                    <p class="text-sm font-medium text-gray-600 dark:text-gray-400">Pergerakan</p>
+                    <p class="text-3xl font-bold text-blue-600">{{ $this->movementsToday }}</p>
+                    <p class="text-xs text-gray-500 dark:text-gray-500 mt-1">Hari ini | {{ $this->movementsThisWeek }} Minggu ini</p>
+                </div>
+                <div class="text-4xl">📊</div>
             </div>
         </div>
     </div>
@@ -170,7 +184,7 @@
                                 </button>
                                 <button
                                     wire:click="deleteProduct({{ $product->id }})"
-                                    onclick="return confirm('Yakin hapus produk ini?')"
+                                    wire:confirm="Yakin hapus produk ini?"
                                     class="text-red-600 hover:text-red-800 dark:text-red-400 dark:hover:text-red-300 font-medium"
                                 >
                                     Hapus

@@ -78,26 +78,8 @@
             </div>
         </div>
 
-        <!-- Row 3: Stok Saat Ini & Unit -->
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <!-- Stok Saat Ini -->
-            <div>
-                <label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
-                    Stok Saat Ini <span class="text-red-500">*</span>
-                </label>
-                <input
-                    type="number"
-                    wire:model="quantity"
-                    placeholder="Masukkan jumlah stok"
-                    class="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-lg dark:bg-slate-700 dark:text-white focus:ring-2 focus:ring-blue-500 focus:border-transparent @error('quantity') border-red-500 @enderror"
-                />
-                @error('quantity')
-                    <p class="mt-1 text-sm text-red-500 flex items-center">
-                        <span class="mr-1">❌</span> {{ $message }}
-                    </p>
-                @enderror
-            </div>
-
+        <!-- Row 3: Unit -->
+        <div>
             <!-- Unit -->
             <div>
                 <label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
@@ -174,23 +156,10 @@
             @enderror
         </div>
 
-        <!-- Supplier -->
-        <div>
-            <label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
-                Supplier
-            </label>
-            <input
-                type="text"
-                wire:model="supplier"
-                placeholder="Masukkan nama supplier"
-                class="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-lg dark:bg-slate-700 dark:text-white focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-            />
-        </div>
-
         <!-- Form Info Alert -->
         <div class="bg-blue-50 dark:bg-blue-900/30 border border-blue-200 dark:border-blue-800 rounded-lg p-4">
             <p class="text-sm text-blue-800 dark:text-blue-200">
-                <span class="font-semibold">ℹ️ Informasi:</span> SKU tidak bisa diubah setelah produk dibuat.
+                <span class="font-semibold">ℹ️ Informasi:</span> SKU dan stok tidak bisa diubah langsung. Gunakan menu Stok Masuk/Keluar untuk perubahan stok.
             </p>
         </div>
 
