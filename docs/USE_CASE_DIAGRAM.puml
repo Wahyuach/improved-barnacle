@@ -1,0 +1,150 @@
+@startuml Inventory Management System - Use Case Diagram
+
+left to right direction
+
+' Actor
+actor "User\n(Authenticated)" as User
+
+' Authentication & User Management
+package "Authentication & User Management" {
+    usecase UC1 as "Login"
+    usecase UC2 as "Manage Profile"
+    usecase UC3 as "Change Password"
+    usecase UC4 as "Enable/Disable 2FA"
+}
+
+' Inventory Management
+package "Inventory Management" {
+    usecase UC5 as "View Dashboard"
+    usecase UC6 as "View Product List"
+    usecase UC7 as "Add Product"
+    usecase UC8 as "Edit Product"
+    usecase UC9 as "View Product Details"
+    usecase UC10 as "Activate/Deactivate\nProduct"
+}
+
+' Category Management
+package "Category Management" {
+    usecase UC11 as "View Categories"
+    usecase UC12 as "Add Category"
+    usecase UC13 as "Edit Category"
+    usecase UC14 as "Delete Category"
+}
+
+' Stock Movement Management
+package "Stock Movement Management" {
+    usecase UC15 as "Record Stock In"
+    usecase UC16 as "Record Stock Out"
+    usecase UC17 as "Record Stock\nAdjustment"
+    usecase UC18 as "Record Stock Return"
+    usecase UC19 as "View Stock\nMovement Report"
+}
+
+' Alert Management
+package "Alert Management" {
+    usecase UC20 as "View Stock Alerts"
+    usecase UC21 as "Resolve Alert"
+    usecase SYSTEM1 as "Monitor Low Stock"
+    usecase SYSTEM2 as "Monitor Overstock"
+}
+
+' Reporting & Activity Log
+package "Reporting & Activity" {
+    usecase UC22 as "View Activity Log"
+    usecase UC23 as "Generate Stock\nReports"
+    usecase UC24 as "Export Data"
+}
+
+' User connections to Authentication
+User --> UC1
+User --> UC2
+User --> UC3
+User --> UC4
+
+' User connections to Inventory Management
+User --> UC5
+User --> UC6
+User --> UC7
+User --> UC8
+User --> UC9
+User --> UC10
+
+' User connections to Category Management
+User --> UC11
+User --> UC12
+User --> UC13
+User --> UC14
+
+' User connections to Stock Movement
+User --> UC15
+User --> UC16
+User --> UC17
+User --> UC18
+User --> UC19
+
+' User connections to Alert Management
+User --> UC20
+User --> UC21
+
+' User connections to Reporting
+User --> UC22
+User --> UC23
+User --> UC24
+
+' Include relationships
+UC7 ..> UC12 : <<include>>
+UC8 ..> UC12 : <<include>>
+UC9 ..> UC19 : <<include>>
+UC9 ..> UC20 : <<include>>
+
+' Extend relationships
+UC5 <.. UC20 : <<extend>>
+
+' System automated processes
+SYSTEM1 -[hidden]-> UC20
+SYSTEM2 -[hidden]-> UC20
+
+note right of SYSTEM1
+  Automated by system
+  when quantity ≤ min_quantity
+end note
+
+note right of SYSTEM2
+  Automated by system
+  when quantity ≥ max_quantity
+end note
+
+note bottom of UC15
+  Includes: quantity, supplier,
+  reference number, notes
+end note
+
+note bottom of UC16
+  Includes: quantity,
+  reference number, notes
+end note
+
+note bottom of UC17
+  Includes: quantity change,
+  reason for adjustment
+end note
+
+note bottom of UC18
+  Includes: quantity,
+  reference number, notes
+end note
+
+note bottom of UC7
+  Includes: Select category, set SKU,
+  price, quantity, min/max thresholds
+end note
+
+' Styling
+skinparam packageStyle rectangle
+skinparam actorStyle awesome
+skinparam usecaseBackgroundColor #E3F2FD
+skinparam usecaseBorderColor #2196F3
+skinparam packageBackgroundColor #FAFAFA
+skinparam packageBorderColor #757575
+
+@enduml

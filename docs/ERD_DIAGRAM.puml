@@ -1,0 +1,127 @@
+@startuml Inventory Management System - ERD
+
+' Entity definitions
+entity "users" as users {
+  * **id** : BIGINT <<PK>>
+  --
+  * name : VARCHAR(255)
+  * email : VARCHAR(255) <<UK>>
+  email_verified_at : TIMESTAMP
+  * password : VARCHAR(255)
+  two_factor_secret : TEXT
+  two_factor_recovery_codes : TEXT
+  remember_token : VARCHAR(100)
+  * created_at : TIMESTAMP
+  * updated_at : TIMESTAMP
+}
+
+entity "categories" as categories {
+  * **id** : BIGINT <<PK>>
+  --
+  * name : VARCHAR(255) <<UK>>
+  description : VARCHAR(255)
+  * created_at : TIMESTAMP
+  * updated_at : TIMESTAMP
+}
+
+entity "products" as products {
+  * **id** : BIGINT <<PK>>
+  --
+  * category_id : BIGINT <<FK>>
+  * name : VARCHAR(255)
+  * sku : VARCHAR(255) <<UK>>
+  description : TEXT
+  * price : DECIMAL(10,2)
+  * quantity : INTEGER
+  * min_quantity : INTEGER
+  * max_quantity : INTEGER
+  * unit : VARCHAR(255)
+  supplier : VARCHAR(255)
+  * is_active : BOOLEAN
+  * created_at : TIMESTAMP
+  * updated_at : TIMESTAMP
+}
+
+entity "stock_movements" as stock_movements {
+  * **id** : BIGINT <<PK>>
+  --
+  * product_id : BIGINT <<FK>>
+  * user_id : BIGINT <<FK>>
+  * type : ENUM
+  * quantity : INTEGER
+  reference : VARCHAR(255)
+  notes : TEXT
+  supplier : VARCHAR(255)
+  * created_at : TIMESTAMP
+  * updated_at : TIMESTAMP
+}
+
+entity "stock_alerts" as stock_alerts {
+  * **id** : BIGINT <<PK>>
+  --
+  * product_id : BIGINT <<FK>>
+  * alert_type : ENUM
+  * is_resolved : BOOLEAN
+  resolved_at : TIMESTAMP
+  * created_at : TIMESTAMP
+  * updated_at : TIMESTAMP
+}
+
+' Relationships
+categories ||--o{ products : "contains"
+products ||--o{ stock_movements : "has"
+products ||--o{ stock_alerts : "generates"
+users ||--o{ stock_movements : "records"
+
+' Notes for enums
+note right of stock_movements::type
+  Values: 'in', 'out', 
+  'adjustment', 'return'
+end note
+
+note right of stock_alerts::alert_type
+  Values: 'low_stock',
+  'overstocked', 'expiring'
+end note
+
+note bottom of products
+  **Computed Fields:**
+  • stock_status (based on quantity vs min/max)
+  
+  **Business Rules:**
+  • SKU must be unique
+  • quantity should not be negative
+  • must belong to a category
+end note
+
+note bottom of stock_movements
+  **Business Rules:**
+  • Immediately updates product.quantity
+  • All movements require user tracking
+  • Used for audit trail
+end note
+
+note bottom of stock_alerts
+  **Auto-generated when:**
+  • quantity ≤ min_quantity (low_stock)
+  • quantity ≥ max_quantity (overstocked)
+end note
+
+' Legend
+legend right
+  **Relationship Cardinality:**
+  ||--o{ : One-to-Many
+  
+  **Key Types:**
+  PK : Primary Key
+  FK : Foreign Key
+  UK : Unique Key
+  
+  **Constraints:**
+  * : NOT NULL
+  
+  **Delete Behavior:**
+  All FK use CASCADE on delete
+endlegend
+
+@enduml
