@@ -12,6 +12,16 @@ export default defineConfig({
         }),
         tailwindcss(),
     ],
+    base: '/public/',
+    build: {
+        manifest: true,
+        outDir: 'public/build',
+        rollupOptions: {
+            input: {
+                app: 'resources/js/app.js'
+            }
+        }
+    },
     server: {
         cors: true,
     },
