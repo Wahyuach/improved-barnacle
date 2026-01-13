@@ -1,8 +1,6 @@
-<svg width="150" height="150" viewBox="0 0 150 150" xmlns="http://www.w3.org/2000/svg">
-    <!-- <rect width="100%" height="100%" fill="#171717" /> -->
+<svg viewBox="0 0 150 150" xmlns="http://www.w3.org/2000/svg" {{ $attributes }}>
   <g transform="translate(10, 10)">
     <circle cx="65" cy="65" r="60" stroke="#008037" stroke-width="8" fill="none" />
-
     <path d="M 65 110
              C 45 110, 30 80, 40 60
              C 45 40, 60 10, 75 10
@@ -13,7 +11,6 @@
              C 95 125, 75 115, 65 110
              Z"
           fill="#fdd835" />
-
     <path d="M 50 95 Q 45 105 55 105 L 60 100" stroke="#ffffff" stroke-width="3" fill="none" />
   </g>
 </svg>
