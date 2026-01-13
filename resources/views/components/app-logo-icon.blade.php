@@ -1,5 +1,4 @@
-<svg width="150" height="150" viewBox="0 0 150 150" xmlns="http://www.w3.org/2000/svg">
-    <!-- <rect width="100%" height="100%" fill="#171717" /> -->
+<svg viewBox="0 0 150 150" xmlns="http://www.w3.org/2000/svg" {{ $attributes }}></svg>
   <g transform="translate(10, 10)">
     <circle cx="65" cy="65" r="60" stroke="#008037" stroke-width="8" fill="none" />
 
